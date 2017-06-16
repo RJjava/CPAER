@@ -28,7 +28,6 @@
                              @"password" : password
                              };
     [self POST:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-//        NSError *err = [self handleFailureBlockWithError:responseObject];
         NSError *err = [self handleSuccessBlockWithResponse:responseObject];
         if (!err) {
             NSString *resultMsg = responseObject[@"resultMsg"];

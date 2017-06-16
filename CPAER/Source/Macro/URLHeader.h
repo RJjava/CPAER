@@ -38,6 +38,105 @@
  */
 #define URL_Sms @"smsNotice/sendIdentifyCode"
 
+/** 3.4
+ * 修改密码
+ */
+#define URL_UpdatePW @"user/updatePassword"
+
+/** 3.5
+ * 修改密码
+ */
+#define URL_ForgetPW @"user/forgetPassword"
+
+/** 3.6
+ * 修改用户名(该接口暂不开放)
+ */
+#define URL_UpdateName @"user/updateUsername"
+
+/** 3.7
+ * 修改用户基本信息
+ */
+#define URL_UpdateInfo @"user/updateBasicInfo"
+
+/** 3.8
+ * 关注/取消关注
+ */
+#define URL_Follow @"follow/userFollow"
+
+/** 3.9
+ * 关注列表
+ */
+#define URL_FollowList @"follow/followList"
+
+/** 3.10
+ * 系统可下载资源文件列表
+ */
+#define URL_ResourceList @"resource/getDownResource"
+
+/** 3.11
+ * 保存/删除下载记录
+ */
+#define URL_UpdateUserDown @"userDownload/updateUserDownload"
+
+/** 3.12
+ * 用户已下载资源文件列表
+ */
+#define URL_UserDownList @"userDownload/getUserDownload"
+
+/** 3.13
+ * 收藏/取消收藏
+ */
+#define URL_Collect @"collect/userCollect"
+
+/** 3.14
+ * 收藏列表
+ */
+#define URL_CollectList @"follow/collectList"
+
+/** 3.15
+ * 发表提问
+ */
+#define URL_Ask @"question/publishQuestion"
+
+/** 3.16
+ * 回答提问
+ */
+#define URL_Reply @"question/replyQuestion"
+
+/** 3.17
+ * 给回答点赞/取消赞
+ */
+#define URL_Support @"question/supportUserAnswer"
+
+/** 3.18
+ * 采纳答案
+ */
+#define URL_UseUserAnswer @"question/useUserAnswer"
+
+/** 3.19
+ * 用户提问列表
+ */
+#define URL_QuestionList @"question/userQuestionList"
+
+/** 3.20
+ * 个人空间首页
+ */
+#define URL_PersonalSpace @"user/personalSpace"
+
+/** 3.21
+ * 获取可用积分
+ */
+#define URL_IntegralAmount @"account/getIntegralAmount"
+
+/** 3.22
+ * 获取用户账户交易流水
+ */
+#define URL_TransactionList @"account/getUserTransactionList"
+
+/** 3.23
+ * 获取系统省份列表
+ */
+#define URL_ProvinceList @"region/getSystemProvince"
 
 
 #endif

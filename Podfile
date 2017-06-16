@@ -9,5 +9,6 @@ pod 'SDCycleScrollView','~> 1.64'
 pod 'MBProgressHUD', '~> 1.0.0'
 pod 'JPush', '~> 3.0.2'
 pod 'MJRefresh', '~> 3.1.12'
+pod 'Mantle', '~> 2.0.7'
 
 end
