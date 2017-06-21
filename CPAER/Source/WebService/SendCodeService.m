@@ -24,17 +24,21 @@
     return service;
 }
 
-- (void)postRegisterCodeWithMobile:(NSString *)mobile Handler:(completionObjectHandler)handler {
+- (void)postRegisterCodeWithMobile:(NSString *)mobile
+                           Handler:(completionObjectHandler)handler {
     [self cancelRegisterCode];
     _RegisterCode = [self getBussId:@"YHZC" Mobile:mobile handler:handler];
 }
 
-- (void)postForgotCodeWithMobile:(NSString *)mobile Handler:(completionObjectHandler)handler {
+- (void)postForgotCodeWithMobile:(NSString *)mobile
+                         Handler:(completionObjectHandler)handler {
     [self cancelForgotCode];
     _ForgotCode = [self getBussId:@"WJMM" Mobile:mobile handler:handler];
 }
 
-- (NSURLSessionDataTask *)getBussId:(NSString *)bussId Mobile:(NSString *)mobile  handler:(completionObjectHandler)handler
+- (NSURLSessionDataTask *)getBussId:(NSString *)bussId
+                             Mobile:(NSString *)mobile
+                            handler:(completionObjectHandler)handler
 {
     NSString *url = [NSString stringWithFormat:@"%@%@",URL_API,URL_Sms];
     NSDictionary *param = @{

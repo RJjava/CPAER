@@ -20,7 +20,11 @@
     return service;
 }
 
-- (void)registerWithMobile:(NSString *)mobile IdentifyCode:(NSString *)code PassWord:(NSString *)password UserType:(NSString *) usertype Handler:(completionObjectHandler)handler {
+- (void)registerWithMobile:(NSString *)mobile
+              IdentifyCode:(NSString *)code
+                  PassWord:(NSString *)password
+                  UserType:(NSString *) usertype
+                   Handler:(completionObjectHandler)handler {
     [self cancelAllRequest];
     NSString *url = [NSString stringWithFormat:@"%@%@",URL_API,URL_Register];
     NSDictionary *params = @{

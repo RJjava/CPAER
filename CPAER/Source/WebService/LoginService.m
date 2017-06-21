@@ -20,18 +20,21 @@
     return service;
 }
 
-- (void)loginWithMobile:(NSString *)mobile PassWord:(NSString *)password Handler:(completionObjectHandler)handler {
+- (void)loginWithMobile:(NSString *)mobile
+               PassWord:(NSString *)password
+                Handler:(completionObjectHandler)handler {
     [self cancelAllRequest];
     NSString *url = [NSString stringWithFormat:@"%@%@",URL_API,URL_Login];
     NSDictionary *params = @{
+                             @"uuid":@"0c8297d7-6d3a-46da-b782-0df2434f88b1",
                              @"mobilePhone" : mobile,
                              @"password" : password
                              };
     [self POST:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSError *err = [self handleSuccessBlockWithResponse:responseObject];
         if (!err) {
-            NSString *resultMsg = responseObject[@"resultMsg"];
-            handler(resultMsg,nil);
+            BaseInfo *model = [MTLJSONAdapter modelOfClass:[BaseInfo class] fromJSONDictionary:responseObject error:nil];
+            handler(model,nil);
         } else {
             handler(nil,err);
         }
@@ -39,24 +42,5 @@
         handler(nil,[self handleFailureBlockWithError:error]);
     }];
 }
-//- (void)loginWithMobile:(NSString *)mobile PassWord:(NSString *)password Handler:(completionObjectHandler)handler {
-//    [self cancelAllRequest];
-//    NSString *url = [NSString stringWithFormat:@"%@%@",URL_API,URL_Login];
-//    NSDictionary *params = @{
-//                             @"mobilePhone" : mobile,
-//                             @"password" : password
-//                             };
-//    [self POST:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-//        //        NSError *err = [self handleFailureBlockWithError:responseObject];
-//        NSError *err = [self handleSuccessBlockWithResponse:responseObject];
-//        if (!err) {
-//            // to do
-//        } else {
-//            handler(nil,err);
-//        }
-//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-//        handler(nil,[self handleFailureBlockWithError:error]);
-//    }];
-//}
 
 @end

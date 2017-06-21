@@ -91,7 +91,7 @@
 /** 3.14
  * 收藏列表
  */
-#define URL_CollectList @"follow/collectList"
+#define URL_CollectList @"collect/collectList"
 
 /** 3.15
  * 发表提问
