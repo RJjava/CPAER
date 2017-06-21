@@ -28,7 +28,7 @@ typedef enum : NSUInteger {
 + (instancetype)sharedService;
 
 - (void)isFollowWithFollowType:(followType)type
-                   followValue:(NSString *)userId
+                   FollowValue:(NSInteger )followId
                       isFollow:(isFollow)flag
                        Handler:(completionHandler)handler;
 

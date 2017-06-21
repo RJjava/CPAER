@@ -37,6 +37,8 @@
 		CCA4ACC71EFA4DF2000EAA4A /* Resource.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA4ACC61EFA4DF2000EAA4A /* Resource.m */; };
 		CCA4ACCA1EFA57C2000EAA4A /* ResourceService.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA4ACC91EFA57C2000EAA4A /* ResourceService.m */; };
 		CCA4ACCD1EFA61D6000EAA4A /* Download.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA4ACCC1EFA61D6000EAA4A /* Download.m */; };
+		CCA4ACD31EFA688B000EAA4A /* CollectService.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA4ACD21EFA688B000EAA4A /* CollectService.m */; };
+		CCA4ACD61EFA6E71000EAA4A /* Collect.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA4ACD51EFA6E71000EAA4A /* Collect.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +123,10 @@
 		CCA4ACC91EFA57C2000EAA4A /* ResourceService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceService.m; sourceTree = "<group>"; };
 		CCA4ACCB1EFA61D6000EAA4A /* Download.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Download.h; sourceTree = "<group>"; };
 		CCA4ACCC1EFA61D6000EAA4A /* Download.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Download.m; sourceTree = "<group>"; };
+		CCA4ACD11EFA688B000EAA4A /* CollectService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectService.h; sourceTree = "<group>"; };
+		CCA4ACD21EFA688B000EAA4A /* CollectService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectService.m; sourceTree = "<group>"; };
+		CCA4ACD41EFA6E71000EAA4A /* Collect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Collect.h; sourceTree = "<group>"; };
+		CCA4ACD51EFA6E71000EAA4A /* Collect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Collect.m; sourceTree = "<group>"; };
 		E16E2CEA6F6FD73FC65A6D59 /* Pods-CPAER.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CPAER.release.xcconfig"; path = "Pods/Target Support Files/Pods-CPAER/Pods-CPAER.release.xcconfig"; sourceTree = "<group>"; };
 		FF02B227F4CFDFA8F83673D7 /* libPods-CPAER.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CPAER.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -386,6 +392,8 @@
 				CCA4ACBD1EFA1D84000EAA4A /* FollowService.m */,
 				CCA4ACC81EFA57C2000EAA4A /* ResourceService.h */,
 				CCA4ACC91EFA57C2000EAA4A /* ResourceService.m */,
+				CCA4ACD11EFA688B000EAA4A /* CollectService.h */,
+				CCA4ACD21EFA688B000EAA4A /* CollectService.m */,
 			);
 			path = WebService;
 			sourceTree = "<group>";
@@ -410,6 +418,8 @@
 				CCA4ACC61EFA4DF2000EAA4A /* Resource.m */,
 				CCA4ACCB1EFA61D6000EAA4A /* Download.h */,
 				CCA4ACCC1EFA61D6000EAA4A /* Download.m */,
+				CCA4ACD41EFA6E71000EAA4A /* Collect.h */,
+				CCA4ACD51EFA6E71000EAA4A /* Collect.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -614,6 +624,7 @@
 				CCA4ACC71EFA4DF2000EAA4A /* Resource.m in Sources */,
 				96E3C0B01EC83DF4009777EE /* LearnViewController.m in Sources */,
 				96DCCB5E1EC75B6A001C3F39 /* BaseViewController.m in Sources */,
+				CCA4ACD61EFA6E71000EAA4A /* Collect.m in Sources */,
 				CCA4ACC41EFA4790000EAA4A /* Follow.m in Sources */,
 				96DCCB5B1EC75B16001C3F39 /* UIViewController+Utils.m in Sources */,
 				CCA4ACB51EF92AEC000EAA4A /* BaseInfo.m in Sources */,
@@ -633,6 +644,7 @@
 				9635A3A61EC05C97005D7405 /* UIImage+Category.m in Sources */,
 				CCA4ACCD1EFA61D6000EAA4A /* Download.m in Sources */,
 				96E255231EC7193900BECD4B /* BaseHttpClient.m in Sources */,
+				CCA4ACD31EFA688B000EAA4A /* CollectService.m in Sources */,
 				96E3C0AC1EC83493009777EE /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

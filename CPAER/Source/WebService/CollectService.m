@@ -1,14 +1,14 @@
 //
-//  FollowService.m
+//  CollectService.m
 //  CPAER
 //
 //  Created by 刘赞 on 2017/6/21.
 //  Copyright © 2017年 zhuzh. All rights reserved.
 //
 
-#import "FollowService.h"
+#import "CollectService.h"
 
-@implementation FollowService
+@implementation CollectService
 
 + (instancetype)sharedService
 {
@@ -20,17 +20,17 @@
     return service;
 }
 
-- (void)isFollowWithFollowType:(followType)type
-                   FollowValue:(NSInteger)followId
-                      isFollow:(isFollow)flag
-                       Handler:(completionHandler)handler {
+- (void)isCollectWithCollectType:(collectType)type
+                    CollectValue:(NSInteger)collectId
+                       isCollect:(isCollect)flag
+                         Handler:(completionHandler)handler {
     [self cancelAllRequest];
-    NSString *url = [NSString stringWithFormat:@"%@%@",URL_API,URL_Follow];
+    NSString *url = [NSString stringWithFormat:@"%@%@",URL_API,URL_Collect];
     NSDictionary *dict = @{
                            @"uuid" : @"0c8297d7-6d3a-46da-b782-0df2434f88b1",
                            @"userId":@"",
-                           @"followType":@(type),
-                           @"followValue":@(followId),
+                           @"collectType":@(type),
+                           @"collectValue":@(collectId),
                            @"flag":@(flag)
                            };
     [self POST:url parameters:dict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
@@ -40,17 +40,15 @@
     }];
 }
 
-- (void)getFollowListWithFollowType:(followType)type
-                     followUserType:(followUserType)userType
-                               skip:(NSInteger)skip
-                            Handler:(completionInfiniteArrayHandler)handler {
+- (void)getCollectListWithCollectType:(collectType)type
+                                 skip:(NSInteger)skip
+                              Handler:(completionInfiniteArrayHandler)handler {
     [self cancelAllRequest];
-    NSString *url = [NSString stringWithFormat:@"%@%@",URL_API,URL_FollowList];
+    NSString *url = [NSString stringWithFormat:@"%@%@",URL_API,URL_CollectList];
     NSDictionary *dict = @{
                            @"uuid" : @"0c8297d7-6d3a-46da-b782-0df2434f88b1",
                            @"userId":@"",
-                           @"followType":@(type),
-                           @"followUserType":@(userType),
+                           @"collectType":@(type),
                            @"curPage":@(skip),
                            @"maxLine":@([self size])
                            };
@@ -58,7 +56,7 @@
         NSError *err = [self handleSuccessBlockWithResponse:responseObject];
         if (!err) {
             NSArray *json = responseObject[@"data"];
-            NSArray *list = [MTLJSONAdapter modelsOfClass:[Follow class] fromJSONArray:json error:nil];
+            NSArray *list = [MTLJSONAdapter modelsOfClass:[Collect class] fromJSONArray:json error:nil];
             handler(list,list.count < [self size],nil);
         } else {
             handler(nil,NO, err);

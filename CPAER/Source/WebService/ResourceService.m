@@ -21,7 +21,7 @@
 }
 
 - (void)getDownResourceWithResourceTypeId:(resourceType)typeId
-                                  Handler:(completionInfiniteArrayHandler)handler {
+                                  Handler:(completionArrayHandler)handler {
     [self cancelAllRequest];
     NSString *url = [NSString stringWithFormat:@"%@%@",URL_API,URL_ResourceList];
     NSDictionary *dict = @{
@@ -33,12 +33,12 @@
         if (!err) {
             NSArray *json = responseObject[@"data"];
             NSArray *list = [MTLJSONAdapter modelsOfClass:[Resource class] fromJSONArray:json error:nil];
-            handler(list,list.count < [self size],nil);
+            handler(list,nil);
         } else {
-            handler(nil,NO, err);
+            handler(nil, err);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        handler(nil,NO, [self handleFailureBlockWithError:error]);
+        handler(nil, [self handleFailureBlockWithError:error]);
     }];
 }
 
@@ -46,7 +46,7 @@
                               UpdateType:(updateType)type
                                  Handler:(completionHandler)handler {
     [self cancelAllRequest];
-    NSString *url = [NSString stringWithFormat:@"%@%@",URL_API,URL_UpdateInfo];
+    NSString *url = [NSString stringWithFormat:@"%@%@",URL_API,URL_UpdateUserDown];
     NSDictionary *dict = @{
                            @"uuid" : @"0c8297d7-6d3a-46da-b782-0df2434f88b1",
                            @"userId":@"",
@@ -61,9 +61,9 @@
 }
 
 - (void)getUserDownloadWithResourceTypeId:(resourceType)typeId
-                                  Handler:(completionInfiniteArrayHandler)handler {
+                                  Handler:(completionArrayHandler)handler {
     [self cancelAllRequest];
-    NSString *url = [NSString stringWithFormat:@"%@%@",URL_API,URL_ResourceList];
+    NSString *url = [NSString stringWithFormat:@"%@%@",URL_API,URL_UserDownList];
     NSDictionary *dict = @{
                            @"uuid" : @"0c8297d7-6d3a-46da-b782-0df2434f88b1",
                            @"userId":@"",
@@ -74,12 +74,12 @@
         if (!err) {
             NSArray *json = responseObject[@"data"];
             NSArray *list = [MTLJSONAdapter modelsOfClass:[Download class] fromJSONArray:json error:nil];
-            handler(list,list.count < [self size],nil);
+            handler(list,nil);
         } else {
-            handler(nil,NO, err);
+            handler(nil, err);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        handler(nil,NO, [self handleFailureBlockWithError:error]);
+        handler(nil, [self handleFailureBlockWithError:error]);
     }];
 }
 @end

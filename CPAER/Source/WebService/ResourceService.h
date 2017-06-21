@@ -17,7 +17,7 @@ typedef NS_ENUM(NSInteger,updateType) {
 
 typedef NS_ENUM(NSInteger,resourceType) {
     text = 1,
-    video = 2
+    audio = 2
 };
 
 @interface ResourceService : BaseHttpClient
@@ -25,13 +25,13 @@ typedef NS_ENUM(NSInteger,resourceType) {
 + (instancetype)sharedService;
 
 - (void)getDownResourceWithResourceTypeId:(resourceType)typeId
-                                  Handler:(completionInfiniteArrayHandler)handler;
+                                  Handler:(completionArrayHandler)handler;
 
 - (void)updateDownWithDownloadResourceId:(NSInteger)resourceId
                               UpdateType:(updateType)type
                                  Handler:(completionHandler)handler;
 
 - (void)getUserDownloadWithResourceTypeId:(resourceType)typeId
-                                  Handler:(completionInfiniteArrayHandler)handler;
+                                  Handler:(completionArrayHandler)handler;
 
 @end
