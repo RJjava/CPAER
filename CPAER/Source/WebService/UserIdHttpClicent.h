@@ -7,6 +7,8 @@
 //
 
 #import "BaseHttpClient.h"
+#import "AppDelegate.h"
+#import "LoginViewController.h"
 
 @interface UserIdHttpClicent : BaseHttpClient
 

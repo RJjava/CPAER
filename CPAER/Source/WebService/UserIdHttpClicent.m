@@ -48,7 +48,31 @@
 
 - (void)showLoginIfNeeded
 {
+    [self showLoginPrompt:@"游客您好，此功能登录后方可使用" from:nil];
+}
+
+- (void)showLoginPrompt:(NSString *)text from:(UIViewController *)sourceViewController
+{
+    UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:nil message:text preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [alertVC dismissViewControllerAnimated:YES completion:nil];
+    }];
+    // hack way to set message font, not suggested
+    NSAttributedString *message = [[NSAttributedString alloc] initWithString:text attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14]}];
+    [alertVC setValue:message forKey:@"attributedMessage"];
     
+    UIAlertAction *loginAction = [UIAlertAction actionWithTitle:@"登录" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [alertVC dismissViewControllerAnimated:YES completion:nil];
+        LoginViewController *loginVC = [[LoginViewController alloc] init];
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:loginVC];
+        [sourceViewController presentViewController:nav animated:YES completion:nil];
+    }];
+    [alertVC addAction:cancelAction];
+    [alertVC addAction:loginAction];
+    if (!sourceViewController) {
+        sourceViewController = [((AppDelegate *)[UIApplication sharedApplication].delegate) window].rootViewController;
+    }
+    [sourceViewController presentViewController:alertVC animated:YES completion:nil];
 }
 
 @end
