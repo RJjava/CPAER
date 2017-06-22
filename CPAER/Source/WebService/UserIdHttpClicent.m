@@ -63,9 +63,9 @@
     
     UIAlertAction *loginAction = [UIAlertAction actionWithTitle:@"登录" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [alertVC dismissViewControllerAnimated:YES completion:nil];
-        LoginViewController *loginVC = [[LoginViewController alloc] init];
-        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:loginVC];
-        [sourceViewController presentViewController:nav animated:YES completion:nil];
+        UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        LoginViewController *loginVC = [storyBoard instantiateViewControllerWithIdentifier:@"LoginVC"];
+        [sourceViewController presentViewController:loginVC animated:YES completion:nil];
     }];
     [alertVC addAction:cancelAction];
     [alertVC addAction:loginAction];
