@@ -6,7 +6,7 @@
 //  Copyright © 2017年 zhuzh. All rights reserved.
 //
 
-#import "BaseHttpClient.h"
+#import "UserIdHttpClicent.h"
 #import "Follow.h"
 
 typedef NS_ENUM(NSInteger,followType) {
@@ -23,7 +23,7 @@ typedef enum : NSUInteger {
     follow,
 } isFollow;
 
-@interface FollowService : BaseHttpClient
+@interface FollowService : UserIdHttpClicent
 
 + (instancetype)sharedService;
 

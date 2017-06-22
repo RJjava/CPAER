@@ -9,6 +9,8 @@
 #ifndef Project_APPHeader_h
 #define Project_APPHeader_h
 
+#define kWebServiceErrCodeInvalidUserId    50016
+
 //获取 屏幕的大小
 #define kScreenSize [UIScreen mainScreen].bounds.size
 

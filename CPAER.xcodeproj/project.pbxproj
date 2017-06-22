@@ -39,6 +39,7 @@
 		CCA4ACCD1EFA61D6000EAA4A /* Download.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA4ACCC1EFA61D6000EAA4A /* Download.m */; };
 		CCA4ACD31EFA688B000EAA4A /* CollectService.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA4ACD21EFA688B000EAA4A /* CollectService.m */; };
 		CCA4ACD61EFA6E71000EAA4A /* Collect.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA4ACD51EFA6E71000EAA4A /* Collect.m */; };
+		CCD081DB1EFB4F4C00080629 /* UserIdHttpClicent.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD081DA1EFB4F4C00080629 /* UserIdHttpClicent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +128,8 @@
 		CCA4ACD21EFA688B000EAA4A /* CollectService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectService.m; sourceTree = "<group>"; };
 		CCA4ACD41EFA6E71000EAA4A /* Collect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Collect.h; sourceTree = "<group>"; };
 		CCA4ACD51EFA6E71000EAA4A /* Collect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Collect.m; sourceTree = "<group>"; };
+		CCD081D91EFB4F4C00080629 /* UserIdHttpClicent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserIdHttpClicent.h; sourceTree = "<group>"; };
+		CCD081DA1EFB4F4C00080629 /* UserIdHttpClicent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserIdHttpClicent.m; sourceTree = "<group>"; };
 		E16E2CEA6F6FD73FC65A6D59 /* Pods-CPAER.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CPAER.release.xcconfig"; path = "Pods/Target Support Files/Pods-CPAER/Pods-CPAER.release.xcconfig"; sourceTree = "<group>"; };
 		FF02B227F4CFDFA8F83673D7 /* libPods-CPAER.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CPAER.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -378,6 +381,8 @@
 		96E255241EC71A2C00BECD4B /* WebService */ = {
 			isa = PBXGroup;
 			children = (
+				CCD081D91EFB4F4C00080629 /* UserIdHttpClicent.h */,
+				CCD081DA1EFB4F4C00080629 /* UserIdHttpClicent.m */,
 				96C6BBC01EC80515000BC138 /* LoginService.h */,
 				96C6BBC11EC80515000BC138 /* LoginService.m */,
 				96C6BBBD1EC804E3000BC138 /* RegisterService.h */,
@@ -630,6 +635,7 @@
 				CCA4ACB51EF92AEC000EAA4A /* BaseInfo.m in Sources */,
 				CCA4ACBB1EFA0DB8000EAA4A /* ChangeInfoService.m in Sources */,
 				9667267D1EBF04D200DA85F8 /* RegisterViewController.m in Sources */,
+				CCD081DB1EFB4F4C00080629 /* UserIdHttpClicent.m in Sources */,
 				CCA4ACB81EFA01EE000EAA4A /* ChangePWService.m in Sources */,
 				96C6BBBF1EC804E3000BC138 /* RegisterService.m in Sources */,
 				963BB0441EBB1A5400F74944 /* LCTabBarController.m in Sources */,

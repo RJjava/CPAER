@@ -6,7 +6,7 @@
 //  Copyright © 2017年 zhuzh. All rights reserved.
 //
 
-#import "BaseHttpClient.h"
+#import "UserIdHttpClicent.h"
 #import "Resource.h"
 #import "Download.h"
 
@@ -20,7 +20,7 @@ typedef NS_ENUM(NSInteger,resourceType) {
     audio = 2
 };
 
-@interface ResourceService : BaseHttpClient
+@interface ResourceService : UserIdHttpClicent
 
 + (instancetype)sharedService;
 

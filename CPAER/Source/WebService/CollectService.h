@@ -6,7 +6,7 @@
 //  Copyright © 2017年 zhuzh. All rights reserved.
 //
 
-#import "BaseHttpClient.h"
+#import "UserIdHttpClicent.h"
 #import "Collect.h"
 
 typedef NS_ENUM(NSInteger,collectType) {
@@ -20,7 +20,7 @@ typedef enum : NSUInteger {
     follow,
 } isCollect;
 
-@interface CollectService : BaseHttpClient
+@interface CollectService : UserIdHttpClicent
 
 + (instancetype)sharedService;
 

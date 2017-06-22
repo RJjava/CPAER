@@ -48,8 +48,6 @@
     [self cancelAllRequest];
     NSString *url = [NSString stringWithFormat:@"%@%@",URL_API,URL_UpdateUserDown];
     NSDictionary *dict = @{
-                           @"uuid" : @"0c8297d7-6d3a-46da-b782-0df2434f88b1",
-                           @"userId":@"",
                            @"updateType":@(type),
                            @"downloadResourceId":@(resourceId)
                            };
@@ -65,8 +63,6 @@
     [self cancelAllRequest];
     NSString *url = [NSString stringWithFormat:@"%@%@",URL_API,URL_UserDownList];
     NSDictionary *dict = @{
-                           @"uuid" : @"0c8297d7-6d3a-46da-b782-0df2434f88b1",
-                           @"userId":@"",
                            @"resourceTypeId":@(typeId),
                            };
     [self POST:url parameters:dict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {

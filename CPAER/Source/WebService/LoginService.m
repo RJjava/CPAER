@@ -34,6 +34,8 @@
         NSError *err = [self handleSuccessBlockWithResponse:responseObject];
         if (!err) {
             BaseInfo *model = [MTLJSONAdapter modelOfClass:[BaseInfo class] fromJSONDictionary:responseObject error:nil];
+            [[NSUserDefaults standardUserDefaults] setObject:responseObject[@"userId"] forKey:@"userId"];
+            [[NSUserDefaults standardUserDefaults] synchronize];
             handler(model,nil);
         } else {
             handler(nil,err);

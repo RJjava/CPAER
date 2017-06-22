@@ -27,8 +27,6 @@
     [self cancelAllRequest];
     NSString *url = [NSString stringWithFormat:@"%@%@",URL_API,URL_Collect];
     NSDictionary *dict = @{
-                           @"uuid" : @"0c8297d7-6d3a-46da-b782-0df2434f88b1",
-                           @"userId":@"",
                            @"collectType":@(type),
                            @"collectValue":@(collectId),
                            @"flag":@(flag)
@@ -46,8 +44,6 @@
     [self cancelAllRequest];
     NSString *url = [NSString stringWithFormat:@"%@%@",URL_API,URL_CollectList];
     NSDictionary *dict = @{
-                           @"uuid" : @"0c8297d7-6d3a-46da-b782-0df2434f88b1",
-                           @"userId":@"",
                            @"collectType":@(type),
                            @"curPage":@(skip),
                            @"maxLine":@([self size])

@@ -6,9 +6,9 @@
 //  Copyright © 2017年 zhuzh. All rights reserved.
 //
 
-#import "BaseHttpClient.h"
+#import "UserIdHttpClicent.h"
 
-@interface ChangeInfoService : BaseHttpClient
+@interface ChangeInfoService : UserIdHttpClicent
 
 + (instancetype)sharedService;
 
