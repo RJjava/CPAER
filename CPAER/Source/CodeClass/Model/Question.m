@@ -1,24 +1,30 @@
 //
-//  Collect.m
+//  Question.m
 //  CPAER
 //
-//  Created by 刘赞 on 2017/6/21.
+//  Created by 刘赞 on 2017/6/22.
 //  Copyright © 2017年 zhuzh. All rights reserved.
 //
 
-#import "Collect.h"
+#import "Question.h"
 
-@implementation Collect
+@implementation Question
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
-             @"resourceId":@"id",
-             @"resourceBigimgUrl":@"resourceBigimgUrl",
-             @"resourceSmallimgUrl":@"resourceSmallimgUrl",
-             @"resourceUrl":@"resourceUrl",
-             @"resourceTitle":@"resourceTitle",
+             @"questionTitle":@"questionTitle",
+             @"questionContent":@"questionContent",
+             @"questionId":@"questionId",
+             @"integralAmount":@"integralAmount",
+             @"status":@"status",
+             @"userId":@"userId",
+             @"answerList":@"answerList",
              @"publishAt":@"createTime"
              };
+}
+
++ (NSValueTransformer *)answerListJSONTransformer {
+    return [MTLJSONAdapter arrayTransformerWithModelClass:Answer.class];
 }
 
 + (NSDateFormatter *)dateFormatter {

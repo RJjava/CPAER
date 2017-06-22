@@ -10,10 +10,10 @@
 
 @interface BaseInfo : MTLModel<MTLJSONSerializing>
 
-@property (nonatomic,copy)NSString *userId;
+@property (nonatomic,copy,readonly)NSString *userId;
 
-@property (nonatomic,copy)NSString *userName;
+@property (nonatomic,copy,readonly)NSString *userName;
 
-@property (nonatomic,copy)NSString *loginToken;
+@property (nonatomic,copy,readonly)NSString *loginToken;
 
 @end

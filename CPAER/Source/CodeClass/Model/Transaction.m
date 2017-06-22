@@ -1,22 +1,22 @@
 //
-//  Collect.m
+//  Transaction.m
 //  CPAER
 //
-//  Created by 刘赞 on 2017/6/21.
+//  Created by 刘赞 on 2017/6/22.
 //  Copyright © 2017年 zhuzh. All rights reserved.
 //
 
-#import "Collect.h"
+#import "Transaction.h"
 
-@implementation Collect
+@implementation Transaction
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
-             @"resourceId":@"id",
-             @"resourceBigimgUrl":@"resourceBigimgUrl",
-             @"resourceSmallimgUrl":@"resourceSmallimgUrl",
-             @"resourceUrl":@"resourceUrl",
-             @"resourceTitle":@"resourceTitle",
+             @"tranId":@"tranId",
+             @"changeAmount":@"changeAmount",
+             @"balance":@"balance",
+             @"tranType":@"tranType",
+             @"tranDesc":@"tranDesc",
              @"publishAt":@"createTime"
              };
 }

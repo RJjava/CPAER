@@ -40,6 +40,15 @@
 		CCA4ACD31EFA688B000EAA4A /* CollectService.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA4ACD21EFA688B000EAA4A /* CollectService.m */; };
 		CCA4ACD61EFA6E71000EAA4A /* Collect.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA4ACD51EFA6E71000EAA4A /* Collect.m */; };
 		CCD081DB1EFB4F4C00080629 /* UserIdHttpClicent.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD081DA1EFB4F4C00080629 /* UserIdHttpClicent.m */; };
+		CCD081DE1EFB97F400080629 /* QuestionService.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD081DD1EFB97F400080629 /* QuestionService.m */; };
+		CCD081E11EFB9F0C00080629 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD081E01EFB9F0C00080629 /* Question.m */; };
+		CCD081E41EFB9F7400080629 /* Answer.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD081E31EFB9F7400080629 /* Answer.m */; };
+		CCD081E71EFBA4B000080629 /* Personal.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD081E61EFBA4B000080629 /* Personal.m */; };
+		CCD081EA1EFBA61D00080629 /* PersonalSerivce.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD081E91EFBA61D00080629 /* PersonalSerivce.m */; };
+		CCD081ED1EFBAE3C00080629 /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD081EC1EFBAE3C00080629 /* Transaction.m */; };
+		CCD081F01EFBB13900080629 /* Province.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD081EF1EFBB13900080629 /* Province.m */; };
+		CCD081F31EFBB1FF00080629 /* TransactionService.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD081F21EFBB1FF00080629 /* TransactionService.m */; };
+		CCD081F61EFBB43100080629 /* ProvinceService.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD081F51EFBB43100080629 /* ProvinceService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +139,24 @@
 		CCA4ACD51EFA6E71000EAA4A /* Collect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Collect.m; sourceTree = "<group>"; };
 		CCD081D91EFB4F4C00080629 /* UserIdHttpClicent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserIdHttpClicent.h; sourceTree = "<group>"; };
 		CCD081DA1EFB4F4C00080629 /* UserIdHttpClicent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserIdHttpClicent.m; sourceTree = "<group>"; };
+		CCD081DC1EFB97F400080629 /* QuestionService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionService.h; sourceTree = "<group>"; };
+		CCD081DD1EFB97F400080629 /* QuestionService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionService.m; sourceTree = "<group>"; };
+		CCD081DF1EFB9F0C00080629 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		CCD081E01EFB9F0C00080629 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		CCD081E21EFB9F7400080629 /* Answer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Answer.h; sourceTree = "<group>"; };
+		CCD081E31EFB9F7400080629 /* Answer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Answer.m; sourceTree = "<group>"; };
+		CCD081E51EFBA4B000080629 /* Personal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Personal.h; sourceTree = "<group>"; };
+		CCD081E61EFBA4B000080629 /* Personal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Personal.m; sourceTree = "<group>"; };
+		CCD081E81EFBA61D00080629 /* PersonalSerivce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalSerivce.h; sourceTree = "<group>"; };
+		CCD081E91EFBA61D00080629 /* PersonalSerivce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalSerivce.m; sourceTree = "<group>"; };
+		CCD081EB1EFBAE3C00080629 /* Transaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transaction.h; sourceTree = "<group>"; };
+		CCD081EC1EFBAE3C00080629 /* Transaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transaction.m; sourceTree = "<group>"; };
+		CCD081EE1EFBB13900080629 /* Province.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Province.h; sourceTree = "<group>"; };
+		CCD081EF1EFBB13900080629 /* Province.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Province.m; sourceTree = "<group>"; };
+		CCD081F11EFBB1FF00080629 /* TransactionService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionService.h; sourceTree = "<group>"; };
+		CCD081F21EFBB1FF00080629 /* TransactionService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionService.m; sourceTree = "<group>"; };
+		CCD081F41EFBB43100080629 /* ProvinceService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProvinceService.h; sourceTree = "<group>"; };
+		CCD081F51EFBB43100080629 /* ProvinceService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProvinceService.m; sourceTree = "<group>"; };
 		E16E2CEA6F6FD73FC65A6D59 /* Pods-CPAER.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CPAER.release.xcconfig"; path = "Pods/Target Support Files/Pods-CPAER/Pods-CPAER.release.xcconfig"; sourceTree = "<group>"; };
 		FF02B227F4CFDFA8F83673D7 /* libPods-CPAER.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CPAER.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -399,6 +426,14 @@
 				CCA4ACC91EFA57C2000EAA4A /* ResourceService.m */,
 				CCA4ACD11EFA688B000EAA4A /* CollectService.h */,
 				CCA4ACD21EFA688B000EAA4A /* CollectService.m */,
+				CCD081DC1EFB97F400080629 /* QuestionService.h */,
+				CCD081DD1EFB97F400080629 /* QuestionService.m */,
+				CCD081E81EFBA61D00080629 /* PersonalSerivce.h */,
+				CCD081E91EFBA61D00080629 /* PersonalSerivce.m */,
+				CCD081F11EFBB1FF00080629 /* TransactionService.h */,
+				CCD081F21EFBB1FF00080629 /* TransactionService.m */,
+				CCD081F41EFBB43100080629 /* ProvinceService.h */,
+				CCD081F51EFBB43100080629 /* ProvinceService.m */,
 			);
 			path = WebService;
 			sourceTree = "<group>";
@@ -425,6 +460,16 @@
 				CCA4ACCC1EFA61D6000EAA4A /* Download.m */,
 				CCA4ACD41EFA6E71000EAA4A /* Collect.h */,
 				CCA4ACD51EFA6E71000EAA4A /* Collect.m */,
+				CCD081DF1EFB9F0C00080629 /* Question.h */,
+				CCD081E01EFB9F0C00080629 /* Question.m */,
+				CCD081E21EFB9F7400080629 /* Answer.h */,
+				CCD081E31EFB9F7400080629 /* Answer.m */,
+				CCD081E51EFBA4B000080629 /* Personal.h */,
+				CCD081E61EFBA4B000080629 /* Personal.m */,
+				CCD081EB1EFBAE3C00080629 /* Transaction.h */,
+				CCD081EC1EFBAE3C00080629 /* Transaction.m */,
+				CCD081EE1EFBB13900080629 /* Province.h */,
+				CCD081EF1EFBB13900080629 /* Province.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -626,8 +671,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				963BB0421EBB1A5400F74944 /* LCTabbar.m in Sources */,
+				CCD081EA1EFBA61D00080629 /* PersonalSerivce.m in Sources */,
 				CCA4ACC71EFA4DF2000EAA4A /* Resource.m in Sources */,
 				96E3C0B01EC83DF4009777EE /* LearnViewController.m in Sources */,
+				CCD081E71EFBA4B000080629 /* Personal.m in Sources */,
 				96DCCB5E1EC75B6A001C3F39 /* BaseViewController.m in Sources */,
 				CCA4ACD61EFA6E71000EAA4A /* Collect.m in Sources */,
 				CCA4ACC41EFA4790000EAA4A /* Follow.m in Sources */,
@@ -636,18 +683,25 @@
 				CCA4ACBB1EFA0DB8000EAA4A /* ChangeInfoService.m in Sources */,
 				9667267D1EBF04D200DA85F8 /* RegisterViewController.m in Sources */,
 				CCD081DB1EFB4F4C00080629 /* UserIdHttpClicent.m in Sources */,
+				CCD081F31EFBB1FF00080629 /* TransactionService.m in Sources */,
 				CCA4ACB81EFA01EE000EAA4A /* ChangePWService.m in Sources */,
 				96C6BBBF1EC804E3000BC138 /* RegisterService.m in Sources */,
+				CCD081E11EFB9F0C00080629 /* Question.m in Sources */,
+				CCD081DE1EFB97F400080629 /* QuestionService.m in Sources */,
 				963BB0441EBB1A5400F74944 /* LCTabBarController.m in Sources */,
+				CCD081ED1EFBAE3C00080629 /* Transaction.m in Sources */,
 				CCA4ACBE1EFA1D84000EAA4A /* FollowService.m in Sources */,
 				963BB0411EBB1A5400F74944 /* AppDelegate.m in Sources */,
+				CCD081F01EFBB13900080629 /* Province.m in Sources */,
 				96C6BBC21EC80515000BC138 /* LoginService.m in Sources */,
+				CCD081E41EFB9F7400080629 /* Answer.m in Sources */,
 				96E255271EC71B0500BECD4B /* SendCodeService.m in Sources */,
 				9635A3A31EC04EE9005D7405 /* NetWorkManager.m in Sources */,
 				963BB0431EBB1A5400F74944 /* LCTabBarButton.m in Sources */,
 				963BAFDD1EBB14C900F74944 /* main.m in Sources */,
 				CCA4ACCA1EFA57C2000EAA4A /* ResourceService.m in Sources */,
 				9635A3A61EC05C97005D7405 /* UIImage+Category.m in Sources */,
+				CCD081F61EFBB43100080629 /* ProvinceService.m in Sources */,
 				CCA4ACCD1EFA61D6000EAA4A /* Download.m in Sources */,
 				96E255231EC7193900BECD4B /* BaseHttpClient.m in Sources */,
 				CCA4ACD31EFA688B000EAA4A /* CollectService.m in Sources */,
