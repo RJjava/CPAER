@@ -10,6 +10,7 @@
 
 @interface LiuYanJiaViewController ()
 @property (assign, nonatomic) BOOL isLeft;//是搜到的留言还是我的留言
+@property (weak, nonatomic) IBOutlet UIButton *shouDaoLiuYanBtn;//收到的留言Btn
 
 
 @end
@@ -19,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _isLeft = YES;
+    [self changeTypeBtnClick:_shouDaoLiuYanBtn];
     // Do any additional setup after loading the view.
 }
 
@@ -87,15 +89,15 @@
     }else{
         _isLeft = NO;
     }
-    UIView *superV = sender.superview;//未选中的btn字体颜色是#333333即51，51，51
+    UIView *superV = sender.superview;//未选中的btn字体颜色是#333333即51，51，51   自己修改#EEEEEE即238，238，238
     UIButton *leftBtn = [superV viewWithTag:101];//左侧Btn
-    [leftBtn setTitleColor:_isLeft? Color_BaseColor : [UIColor colorWithRed:33/255.0 green:33/255.0 blue:33/255.0 alpha:1.0] forState:UIControlStateNormal];
+    [leftBtn setTitleColor:_isLeft? Color_BaseColor : [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1.0] forState:UIControlStateNormal];
     UIView *leftLineV = [superV viewWithTag:102];//左侧线条
-    [leftLineV setBackgroundColor:_isLeft? Color_BaseColor : [UIColor colorWithRed:33/255.0 green:33/255.0 blue:33/255.0 alpha:1.0]];
+    [leftLineV setHidden:_isLeft? NO : YES];
     UIButton *rightBtn = [superV viewWithTag:201];//右侧Btn
-    [rightBtn setTitleColor:!_isLeft ? Color_BaseColor : [UIColor colorWithRed:33/255.0 green:33/255.0 blue:33/255.0 alpha:1.0] forState:UIControlStateNormal];
+    [rightBtn setTitleColor:!_isLeft ? Color_BaseColor : [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1.0] forState:UIControlStateNormal];
     UIButton *rightLineV = [superV viewWithTag:202];//右侧线条
-    [rightLineV setBackgroundColor:!_isLeft? Color_BaseColor : [UIColor colorWithRed:33/255.0 green:33/255.0 blue:33/255.0 alpha:1.0]];
+    [rightLineV setHidden:!_isLeft? NO : YES];
 }
 
 

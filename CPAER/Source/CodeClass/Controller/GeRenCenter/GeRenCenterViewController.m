@@ -9,6 +9,7 @@
 #import "GeRenCenterViewController.h"
 #import "GuanZhuViewController.h"
 #import "LiuYanJiaViewController.h"
+#import "YaoQingHaoYouViewController.h"
 
 @interface GeRenCenterViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableV;
@@ -164,7 +165,8 @@
         GuanZhuViewController *guanZhuVC = [storyBoard instantiateViewControllerWithIdentifier:@"GuanZhuVC"];
         [self.navigationController pushViewController:guanZhuVC animated:YES];
     }else if (indexPath.row == 5){//邀请
-        [self showMsg:@"邀请"];
+        YaoQingHaoYouViewController *yaoQingHaoYouVC = [storyBoard instantiateViewControllerWithIdentifier:@"YaoQingHaoYouVC"];
+        [self.navigationController pushViewController:yaoQingHaoYouVC animated:YES];
     }else if (indexPath.row == 6){//我的下载
         [self showMsg:@"我的下载"];
     }else if (indexPath.row == 7){//我的收藏

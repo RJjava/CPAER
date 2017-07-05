@@ -13,6 +13,7 @@
 		3936E3461F0515D400E264E9 /* BaoKaoDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3936E3451F0515D400E264E9 /* BaoKaoDateViewController.m */; };
 		3936E3491F0515E500E264E9 /* BaoKaoKeMuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3936E3481F0515E500E264E9 /* BaoKaoKeMuViewController.m */; };
 		3949ED171F0657B00031E6F6 /* GuanZhuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3949ED161F0657B00031E6F6 /* GuanZhuViewController.m */; };
+		395610111F0CBC3D001D645D /* YaoQingHaoYouViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395610101F0CBC3D001D645D /* YaoQingHaoYouViewController.m */; };
 		39BEB85D1F08918400B802C6 /* LiuYanJiaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39BEB85C1F08918400B802C6 /* LiuYanJiaViewController.m */; };
 		39E56A9C1F022A9200430540 /* GeRenCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E56A9B1F022A9200430540 /* GeRenCenterViewController.m */; };
 		39E56A9E1F022B1C00430540 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39E56A9D1F022B1C00430540 /* Assets.xcassets */; };
@@ -104,6 +105,8 @@
 		3936E3481F0515E500E264E9 /* BaoKaoKeMuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaoKaoKeMuViewController.m; sourceTree = "<group>"; };
 		3949ED151F0657B00031E6F6 /* GuanZhuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuanZhuViewController.h; sourceTree = "<group>"; };
 		3949ED161F0657B00031E6F6 /* GuanZhuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuanZhuViewController.m; sourceTree = "<group>"; };
+		3956100F1F0CBC3D001D645D /* YaoQingHaoYouViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YaoQingHaoYouViewController.h; sourceTree = "<group>"; };
+		395610101F0CBC3D001D645D /* YaoQingHaoYouViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YaoQingHaoYouViewController.m; sourceTree = "<group>"; };
 		39BEB85B1F08918400B802C6 /* LiuYanJiaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiuYanJiaViewController.h; sourceTree = "<group>"; };
 		39BEB85C1F08918400B802C6 /* LiuYanJiaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiuYanJiaViewController.m; sourceTree = "<group>"; };
 		39E56A9A1F022A9200430540 /* GeRenCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeRenCenterViewController.h; sourceTree = "<group>"; };
@@ -287,6 +290,8 @@
 				3949ED161F0657B00031E6F6 /* GuanZhuViewController.m */,
 				39BEB85B1F08918400B802C6 /* LiuYanJiaViewController.h */,
 				39BEB85C1F08918400B802C6 /* LiuYanJiaViewController.m */,
+				3956100F1F0CBC3D001D645D /* YaoQingHaoYouViewController.h */,
+				395610101F0CBC3D001D645D /* YaoQingHaoYouViewController.m */,
 			);
 			path = GeRenCenter;
 			sourceTree = "<group>";
@@ -845,6 +850,7 @@
 				39E56ACB1F02748E00430540 /* ShenJiTableViewController.m in Sources */,
 				CCD081F61EFBB43100080629 /* ProvinceService.m in Sources */,
 				CCA4ACCD1EFA61D6000EAA4A /* Download.m in Sources */,
+				395610111F0CBC3D001D645D /* YaoQingHaoYouViewController.m in Sources */,
 				96E255231EC7193900BECD4B /* BaseHttpClient.m in Sources */,
 				CCA4ACD31EFA688B000EAA4A /* CollectService.m in Sources */,
 				96E3C0AC1EC83493009777EE /* LoginViewController.m in Sources */,
