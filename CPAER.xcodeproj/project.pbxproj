@@ -7,6 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3936E33D1F05048400E264E9 /* FindPassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3936E33C1F05048400E264E9 /* FindPassWordViewController.m */; };
+		3936E3401F050DA200E264E9 /* WanShanZiLiaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3936E33F1F050DA200E264E9 /* WanShanZiLiaoViewController.m */; };
+		3936E3431F05131A00E264E9 /* ZhuCeXieYiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3936E3421F05131A00E264E9 /* ZhuCeXieYiViewController.m */; };
+		3936E3461F0515D400E264E9 /* BaoKaoDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3936E3451F0515D400E264E9 /* BaoKaoDateViewController.m */; };
+		3936E3491F0515E500E264E9 /* BaoKaoKeMuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3936E3481F0515E500E264E9 /* BaoKaoKeMuViewController.m */; };
+		3949ED171F0657B00031E6F6 /* GuanZhuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3949ED161F0657B00031E6F6 /* GuanZhuViewController.m */; };
+		39BEB85D1F08918400B802C6 /* LiuYanJiaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39BEB85C1F08918400B802C6 /* LiuYanJiaViewController.m */; };
+		39E56A9C1F022A9200430540 /* GeRenCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E56A9B1F022A9200430540 /* GeRenCenterViewController.m */; };
+		39E56A9E1F022B1C00430540 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39E56A9D1F022B1C00430540 /* Assets.xcassets */; };
+		39E56AA11F02335D00430540 /* BaseNavTaBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E56AA01F02335D00430540 /* BaseNavTaBarViewController.m */; };
+		39E56AB71F026AB400430540 /* CAPSPageMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E56AB61F026AB400430540 /* CAPSPageMenu.m */; };
+		39E56ABD1F026F1B00430540 /* GeRenDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E56ABC1F026F1B00430540 /* GeRenDetailViewController.m */; };
+		39E56AC61F02747F00430540 /* KuaiJiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E56AC41F02747F00430540 /* KuaiJiTableViewController.m */; };
+		39E56AC71F02747F00430540 /* KuaiJiTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39E56AC51F02747F00430540 /* KuaiJiTableViewController.xib */; };
+		39E56ACB1F02748E00430540 /* ShenJiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E56AC91F02748E00430540 /* ShenJiTableViewController.m */; };
+		39E56ACC1F02748E00430540 /* ShenJiTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39E56ACA1F02748E00430540 /* ShenJiTableViewController.xib */; };
+		39E56AD01F02749E00430540 /* CaiGuanTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E56ACE1F02749E00430540 /* CaiGuanTableViewController.m */; };
+		39E56AD11F02749E00430540 /* CaiGuanTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39E56ACF1F02749E00430540 /* CaiGuanTableViewController.xib */; };
+		39E56AD51F0274B300430540 /* ShuiFaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E56AD31F0274B300430540 /* ShuiFaTableViewController.m */; };
+		39E56AD61F0274B300430540 /* ShuiFaTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39E56AD41F0274B300430540 /* ShuiFaTableViewController.xib */; };
+		39E56ADA1F0274C200430540 /* JingJiFaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E56AD81F0274C200430540 /* JingJiFaTableViewController.m */; };
+		39E56ADB1F0274C200430540 /* JingJiFaTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39E56AD91F0274C200430540 /* JingJiFaTableViewController.xib */; };
+		39E56ADF1F02751200430540 /* ZhanLueTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E56ADD1F02751200430540 /* ZhanLueTableViewController.m */; };
+		39E56AE01F02751200430540 /* ZhanLueTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39E56ADE1F02751200430540 /* ZhanLueTableViewController.xib */; };
 		9635A3A31EC04EE9005D7405 /* NetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9635A3A21EC04EE9005D7405 /* NetWorkManager.m */; };
 		9635A3A61EC05C97005D7405 /* UIImage+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 9635A3A51EC05C97005D7405 /* UIImage+Category.m */; };
 		963BAFDD1EBB14C900F74944 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 963BAFDC1EBB14C900F74944 /* main.m */; };
@@ -18,7 +42,6 @@
 		963BB0421EBB1A5400F74944 /* LCTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 963BB02F1EBB1A5400F74944 /* LCTabbar.m */; };
 		963BB0431EBB1A5400F74944 /* LCTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 963BB0311EBB1A5400F74944 /* LCTabBarButton.m */; };
 		963BB0441EBB1A5400F74944 /* LCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 963BB0331EBB1A5400F74944 /* LCTabBarController.m */; };
-		963BB0461EBB1AF700F74944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 963BB0451EBB1AF700F74944 /* Assets.xcassets */; };
 		9667267D1EBF04D200DA85F8 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9667267C1EBF04D200DA85F8 /* RegisterViewController.m */; };
 		96C6BBBF1EC804E3000BC138 /* RegisterService.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C6BBBE1EC804E3000BC138 /* RegisterService.m */; };
 		96C6BBC21EC80515000BC138 /* LoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C6BBC11EC80515000BC138 /* LoginService.m */; };
@@ -69,6 +92,47 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3936E33B1F05048400E264E9 /* FindPassWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindPassWordViewController.h; sourceTree = "<group>"; };
+		3936E33C1F05048400E264E9 /* FindPassWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindPassWordViewController.m; sourceTree = "<group>"; };
+		3936E33E1F050DA200E264E9 /* WanShanZiLiaoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WanShanZiLiaoViewController.h; sourceTree = "<group>"; };
+		3936E33F1F050DA200E264E9 /* WanShanZiLiaoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WanShanZiLiaoViewController.m; sourceTree = "<group>"; };
+		3936E3411F05131A00E264E9 /* ZhuCeXieYiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhuCeXieYiViewController.h; sourceTree = "<group>"; };
+		3936E3421F05131A00E264E9 /* ZhuCeXieYiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhuCeXieYiViewController.m; sourceTree = "<group>"; };
+		3936E3441F0515D400E264E9 /* BaoKaoDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaoKaoDateViewController.h; sourceTree = "<group>"; };
+		3936E3451F0515D400E264E9 /* BaoKaoDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaoKaoDateViewController.m; sourceTree = "<group>"; };
+		3936E3471F0515E500E264E9 /* BaoKaoKeMuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaoKaoKeMuViewController.h; sourceTree = "<group>"; };
+		3936E3481F0515E500E264E9 /* BaoKaoKeMuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaoKaoKeMuViewController.m; sourceTree = "<group>"; };
+		3949ED151F0657B00031E6F6 /* GuanZhuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuanZhuViewController.h; sourceTree = "<group>"; };
+		3949ED161F0657B00031E6F6 /* GuanZhuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuanZhuViewController.m; sourceTree = "<group>"; };
+		39BEB85B1F08918400B802C6 /* LiuYanJiaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiuYanJiaViewController.h; sourceTree = "<group>"; };
+		39BEB85C1F08918400B802C6 /* LiuYanJiaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiuYanJiaViewController.m; sourceTree = "<group>"; };
+		39E56A9A1F022A9200430540 /* GeRenCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeRenCenterViewController.h; sourceTree = "<group>"; };
+		39E56A9B1F022A9200430540 /* GeRenCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeRenCenterViewController.m; sourceTree = "<group>"; };
+		39E56A9D1F022B1C00430540 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39E56A9F1F02335D00430540 /* BaseNavTaBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavTaBarViewController.h; sourceTree = "<group>"; };
+		39E56AA01F02335D00430540 /* BaseNavTaBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavTaBarViewController.m; sourceTree = "<group>"; };
+		39E56AB51F026AB400430540 /* CAPSPageMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAPSPageMenu.h; sourceTree = "<group>"; };
+		39E56AB61F026AB400430540 /* CAPSPageMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAPSPageMenu.m; sourceTree = "<group>"; };
+		39E56ABB1F026F1B00430540 /* GeRenDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeRenDetailViewController.h; sourceTree = "<group>"; };
+		39E56ABC1F026F1B00430540 /* GeRenDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeRenDetailViewController.m; sourceTree = "<group>"; };
+		39E56AC31F02747F00430540 /* KuaiJiTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KuaiJiTableViewController.h; sourceTree = "<group>"; };
+		39E56AC41F02747F00430540 /* KuaiJiTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KuaiJiTableViewController.m; sourceTree = "<group>"; };
+		39E56AC51F02747F00430540 /* KuaiJiTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KuaiJiTableViewController.xib; sourceTree = "<group>"; };
+		39E56AC81F02748E00430540 /* ShenJiTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShenJiTableViewController.h; sourceTree = "<group>"; };
+		39E56AC91F02748E00430540 /* ShenJiTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShenJiTableViewController.m; sourceTree = "<group>"; };
+		39E56ACA1F02748E00430540 /* ShenJiTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShenJiTableViewController.xib; sourceTree = "<group>"; };
+		39E56ACD1F02749E00430540 /* CaiGuanTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaiGuanTableViewController.h; sourceTree = "<group>"; };
+		39E56ACE1F02749E00430540 /* CaiGuanTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaiGuanTableViewController.m; sourceTree = "<group>"; };
+		39E56ACF1F02749E00430540 /* CaiGuanTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CaiGuanTableViewController.xib; sourceTree = "<group>"; };
+		39E56AD21F0274B300430540 /* ShuiFaTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShuiFaTableViewController.h; sourceTree = "<group>"; };
+		39E56AD31F0274B300430540 /* ShuiFaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShuiFaTableViewController.m; sourceTree = "<group>"; };
+		39E56AD41F0274B300430540 /* ShuiFaTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShuiFaTableViewController.xib; sourceTree = "<group>"; };
+		39E56AD71F0274C200430540 /* JingJiFaTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JingJiFaTableViewController.h; sourceTree = "<group>"; };
+		39E56AD81F0274C200430540 /* JingJiFaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JingJiFaTableViewController.m; sourceTree = "<group>"; };
+		39E56AD91F0274C200430540 /* JingJiFaTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JingJiFaTableViewController.xib; sourceTree = "<group>"; };
+		39E56ADC1F02751200430540 /* ZhanLueTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhanLueTableViewController.h; sourceTree = "<group>"; };
+		39E56ADD1F02751200430540 /* ZhanLueTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhanLueTableViewController.m; sourceTree = "<group>"; };
+		39E56ADE1F02751200430540 /* ZhanLueTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZhanLueTableViewController.xib; sourceTree = "<group>"; };
 		9635A3A11EC04EE9005D7405 /* NetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkManager.h; sourceTree = "<group>"; };
 		9635A3A21EC04EE9005D7405 /* NetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkManager.m; sourceTree = "<group>"; };
 		9635A3A41EC05C97005D7405 /* UIImage+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Category.h"; sourceTree = "<group>"; };
@@ -96,7 +160,6 @@
 		963BB03B1EBB1A5400F74944 /* IMPHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMPHeader.h; sourceTree = "<group>"; };
 		963BB03C1EBB1A5400F74944 /* KEYHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KEYHeader.h; sourceTree = "<group>"; };
 		963BB03E1EBB1A5400F74944 /* URLHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLHeader.h; sourceTree = "<group>"; };
-		963BB0451EBB1AF700F74944 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9667267B1EBF04D200DA85F8 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		9667267C1EBF04D200DA85F8 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		969CCDEA1EC0721200A74580 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -195,6 +258,48 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		39E56A991F022A9200430540 /* GeRenCenter */ = {
+			isa = PBXGroup;
+			children = (
+				39E56A9A1F022A9200430540 /* GeRenCenterViewController.h */,
+				39E56A9B1F022A9200430540 /* GeRenCenterViewController.m */,
+				39E56ABB1F026F1B00430540 /* GeRenDetailViewController.h */,
+				39E56ABC1F026F1B00430540 /* GeRenDetailViewController.m */,
+				39E56AC31F02747F00430540 /* KuaiJiTableViewController.h */,
+				39E56AC41F02747F00430540 /* KuaiJiTableViewController.m */,
+				39E56AC51F02747F00430540 /* KuaiJiTableViewController.xib */,
+				39E56AC81F02748E00430540 /* ShenJiTableViewController.h */,
+				39E56AC91F02748E00430540 /* ShenJiTableViewController.m */,
+				39E56ACA1F02748E00430540 /* ShenJiTableViewController.xib */,
+				39E56ACD1F02749E00430540 /* CaiGuanTableViewController.h */,
+				39E56ACE1F02749E00430540 /* CaiGuanTableViewController.m */,
+				39E56ACF1F02749E00430540 /* CaiGuanTableViewController.xib */,
+				39E56AD21F0274B300430540 /* ShuiFaTableViewController.h */,
+				39E56AD31F0274B300430540 /* ShuiFaTableViewController.m */,
+				39E56AD41F0274B300430540 /* ShuiFaTableViewController.xib */,
+				39E56AD71F0274C200430540 /* JingJiFaTableViewController.h */,
+				39E56AD81F0274C200430540 /* JingJiFaTableViewController.m */,
+				39E56AD91F0274C200430540 /* JingJiFaTableViewController.xib */,
+				39E56ADC1F02751200430540 /* ZhanLueTableViewController.h */,
+				39E56ADD1F02751200430540 /* ZhanLueTableViewController.m */,
+				39E56ADE1F02751200430540 /* ZhanLueTableViewController.xib */,
+				3949ED151F0657B00031E6F6 /* GuanZhuViewController.h */,
+				3949ED161F0657B00031E6F6 /* GuanZhuViewController.m */,
+				39BEB85B1F08918400B802C6 /* LiuYanJiaViewController.h */,
+				39BEB85C1F08918400B802C6 /* LiuYanJiaViewController.m */,
+			);
+			path = GeRenCenter;
+			sourceTree = "<group>";
+		};
+		39E56AB41F026AB400430540 /* PageMenu */ = {
+			isa = PBXGroup;
+			children = (
+				39E56AB51F026AB400430540 /* CAPSPageMenu.h */,
+				39E56AB61F026AB400430540 /* CAPSPageMenu.m */,
+			);
+			path = PageMenu;
+			sourceTree = "<group>";
+		};
 		963BAFCF1EBB14C900F74944 = {
 			isa = PBXGroup;
 			children = (
@@ -223,7 +328,7 @@
 				963BB0271EBB1A5400F74944 /* Source */,
 				963BAFE41EBB14C900F74944 /* Main.storyboard */,
 				963BAFE91EBB14C900F74944 /* LaunchScreen.storyboard */,
-				963BB0451EBB1AF700F74944 /* Assets.xcassets */,
+				39E56A9D1F022B1C00430540 /* Assets.xcassets */,
 				963BAFEC1EBB14C900F74944 /* Info.plist */,
 				963BAFDB1EBB14C900F74944 /* Supporting Files */,
 			);
@@ -307,6 +412,8 @@
 				966726771EBF01C700DA85F8 /* Controller */,
 				CCA4ACB21EF92AC7000EAA4A /* Model */,
 				963BB02D1EBB1A5400F74944 /* LCTabbar */,
+				39E56A9F1F02335D00430540 /* BaseNavTaBarViewController.h */,
+				39E56AA01F02335D00430540 /* BaseNavTaBarViewController.m */,
 			);
 			path = CodeClass;
 			sourceTree = "<group>";
@@ -381,6 +488,7 @@
 		963BB0401EBB1A5400F74944 /* TheThird */ = {
 			isa = PBXGroup;
 			children = (
+				39E56AB41F026AB400430540 /* PageMenu */,
 			);
 			path = TheThird;
 			sourceTree = "<group>";
@@ -388,6 +496,7 @@
 		966726771EBF01C700DA85F8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				39E56A991F022A9200430540 /* GeRenCenter */,
 				96E3C0AD1EC83DDC009777EE /* TarBarRoot */,
 				9667267A1EBF021000DA85F8 /* LoginRegister */,
 			);
@@ -401,6 +510,16 @@
 				9667267C1EBF04D200DA85F8 /* RegisterViewController.m */,
 				96E3C0AA1EC83493009777EE /* LoginViewController.h */,
 				96E3C0AB1EC83493009777EE /* LoginViewController.m */,
+				3936E33B1F05048400E264E9 /* FindPassWordViewController.h */,
+				3936E33C1F05048400E264E9 /* FindPassWordViewController.m */,
+				3936E33E1F050DA200E264E9 /* WanShanZiLiaoViewController.h */,
+				3936E33F1F050DA200E264E9 /* WanShanZiLiaoViewController.m */,
+				3936E3411F05131A00E264E9 /* ZhuCeXieYiViewController.h */,
+				3936E3421F05131A00E264E9 /* ZhuCeXieYiViewController.m */,
+				3936E3441F0515D400E264E9 /* BaoKaoDateViewController.h */,
+				3936E3451F0515D400E264E9 /* BaoKaoDateViewController.m */,
+				3936E3471F0515E500E264E9 /* BaoKaoKeMuViewController.h */,
+				3936E3481F0515E500E264E9 /* BaoKaoKeMuViewController.m */,
 			);
 			path = LoginRegister;
 			sourceTree = "<group>";
@@ -595,9 +714,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39E56AE01F02751200430540 /* ZhanLueTableViewController.xib in Resources */,
 				963BAFEB1EBB14C900F74944 /* LaunchScreen.storyboard in Resources */,
-				963BB0461EBB1AF700F74944 /* Assets.xcassets in Resources */,
+				39E56ADB1F0274C200430540 /* JingJiFaTableViewController.xib in Resources */,
+				39E56A9E1F022B1C00430540 /* Assets.xcassets in Resources */,
+				39E56AC71F02747F00430540 /* KuaiJiTableViewController.xib in Resources */,
 				963BAFE61EBB14C900F74944 /* Main.storyboard in Resources */,
+				39E56AD11F02749E00430540 /* CaiGuanTableViewController.xib in Resources */,
+				39E56AD61F0274B300430540 /* ShuiFaTableViewController.xib in Resources */,
+				39E56ACC1F02748E00430540 /* ShenJiTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,22 +799,32 @@
 				CCD081EA1EFBA61D00080629 /* PersonalSerivce.m in Sources */,
 				CCA4ACC71EFA4DF2000EAA4A /* Resource.m in Sources */,
 				96E3C0B01EC83DF4009777EE /* LearnViewController.m in Sources */,
+				3936E33D1F05048400E264E9 /* FindPassWordViewController.m in Sources */,
+				39E56ADA1F0274C200430540 /* JingJiFaTableViewController.m in Sources */,
 				CCD081E71EFBA4B000080629 /* Personal.m in Sources */,
+				3949ED171F0657B00031E6F6 /* GuanZhuViewController.m in Sources */,
 				96DCCB5E1EC75B6A001C3F39 /* BaseViewController.m in Sources */,
 				CCA4ACD61EFA6E71000EAA4A /* Collect.m in Sources */,
 				CCA4ACC41EFA4790000EAA4A /* Follow.m in Sources */,
 				96DCCB5B1EC75B16001C3F39 /* UIViewController+Utils.m in Sources */,
 				CCA4ACB51EF92AEC000EAA4A /* BaseInfo.m in Sources */,
 				CCA4ACBB1EFA0DB8000EAA4A /* ChangeInfoService.m in Sources */,
+				3936E3491F0515E500E264E9 /* BaoKaoKeMuViewController.m in Sources */,
 				9667267D1EBF04D200DA85F8 /* RegisterViewController.m in Sources */,
+				39BEB85D1F08918400B802C6 /* LiuYanJiaViewController.m in Sources */,
 				CCD081DB1EFB4F4C00080629 /* UserIdHttpClicent.m in Sources */,
+				3936E3401F050DA200E264E9 /* WanShanZiLiaoViewController.m in Sources */,
 				CCD081F31EFBB1FF00080629 /* TransactionService.m in Sources */,
+				39E56ADF1F02751200430540 /* ZhanLueTableViewController.m in Sources */,
 				CCA4ACB81EFA01EE000EAA4A /* ChangePWService.m in Sources */,
 				96C6BBBF1EC804E3000BC138 /* RegisterService.m in Sources */,
+				3936E3431F05131A00E264E9 /* ZhuCeXieYiViewController.m in Sources */,
 				CCD081E11EFB9F0C00080629 /* Question.m in Sources */,
 				CCD081DE1EFB97F400080629 /* QuestionService.m in Sources */,
 				963BB0441EBB1A5400F74944 /* LCTabBarController.m in Sources */,
+				39E56A9C1F022A9200430540 /* GeRenCenterViewController.m in Sources */,
 				CCD081ED1EFBAE3C00080629 /* Transaction.m in Sources */,
+				39E56AD51F0274B300430540 /* ShuiFaTableViewController.m in Sources */,
 				CCA4ACBE1EFA1D84000EAA4A /* FollowService.m in Sources */,
 				963BB0411EBB1A5400F74944 /* AppDelegate.m in Sources */,
 				CCD081F01EFBB13900080629 /* Province.m in Sources */,
@@ -698,9 +833,16 @@
 				96E255271EC71B0500BECD4B /* SendCodeService.m in Sources */,
 				9635A3A31EC04EE9005D7405 /* NetWorkManager.m in Sources */,
 				963BB0431EBB1A5400F74944 /* LCTabBarButton.m in Sources */,
+				39E56AC61F02747F00430540 /* KuaiJiTableViewController.m in Sources */,
+				39E56AB71F026AB400430540 /* CAPSPageMenu.m in Sources */,
 				963BAFDD1EBB14C900F74944 /* main.m in Sources */,
 				CCA4ACCA1EFA57C2000EAA4A /* ResourceService.m in Sources */,
+				39E56AD01F02749E00430540 /* CaiGuanTableViewController.m in Sources */,
 				9635A3A61EC05C97005D7405 /* UIImage+Category.m in Sources */,
+				3936E3461F0515D400E264E9 /* BaoKaoDateViewController.m in Sources */,
+				39E56ABD1F026F1B00430540 /* GeRenDetailViewController.m in Sources */,
+				39E56AA11F02335D00430540 /* BaseNavTaBarViewController.m in Sources */,
+				39E56ACB1F02748E00430540 /* ShenJiTableViewController.m in Sources */,
 				CCD081F61EFBB43100080629 /* ProvinceService.m in Sources */,
 				CCA4ACCD1EFA61D6000EAA4A /* Download.m in Sources */,
 				96E255231EC7193900BECD4B /* BaseHttpClient.m in Sources */,

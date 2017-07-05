@@ -7,7 +7,14 @@
 //
 
 #import "LearnViewController.h"
+#import "RegisterViewController.h"
 #import "LoginViewController.h"
+#import "FindPassWordViewController.h"
+#import "FindPassWordViewController.h"
+#import "WanShanZiLiaoViewController.h"
+#import "ZhuCeXieYiViewController.h"
+#import "BaoKaoDateViewController.h"
+#import "BaoKaoKeMuViewController.h"
 
 @interface LearnViewController ()
 
@@ -31,11 +38,12 @@
 /**
  跳转登陆页面
  */
-- (void)presentLoginVC{
+- (IBAction)tiaoZhuanBtnClick:(UIButton *)sender {
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     
-    LoginViewController *loginVC = [storyBoard instantiateViewControllerWithIdentifier:@"LoginVC"];
-    [self presentViewController:loginVC animated:NO completion:nil];
+    BaoKaoKeMuViewController *loginVC = [storyBoard instantiateViewControllerWithIdentifier:@"BaoKaoKeMuVC"];
+    [self.navigationController pushViewController:loginVC animated:YES];
+//    [self presentViewController:loginVC animated:NO completion:nil];
 }
 
 /*

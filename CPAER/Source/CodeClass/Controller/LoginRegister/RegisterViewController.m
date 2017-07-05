@@ -30,6 +30,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+    [super viewWillAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
+    [super viewWillDisappear:animated];
+}
 //发送验证码Btn点击事件
 - (IBAction)sendRegisterCodeBtnClick:(UIButton *)sender {
     if(_PhoneNumTF.text == nil || [_PhoneNumTF.text isEqualToString:@""]){//手机号为空
@@ -88,6 +97,10 @@
     
     return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
     
+}
+//返回Btn
+- (IBAction)leftBtnClick:(UIButton *)sender {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end
