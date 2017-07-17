@@ -58,6 +58,8 @@
 		CC2112441F14780B00A00E51 /* SignInService.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2112431F14780B00A00E51 /* SignInService.m */; };
 		CC2112471F14BA4700A00E51 /* HomeDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2112461F14BA4700A00E51 /* HomeDataService.m */; };
 		CC21124A1F14D43900A00E51 /* TopicService.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2112491F14D43900A00E51 /* TopicService.m */; };
+		CC9D0D2E1F1C8039007FA532 /* Sign.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9D0D2D1F1C8039007FA532 /* Sign.m */; };
+		CC9D0D311F1CBFBA007FA532 /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9D0D301F1CBFBA007FA532 /* Topic.m */; };
 		CCA4ACB51EF92AEC000EAA4A /* BaseInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA4ACB41EF92AEC000EAA4A /* BaseInfo.m */; };
 		CCA4ACB81EFA01EE000EAA4A /* ChangePWService.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA4ACB71EFA01EE000EAA4A /* ChangePWService.m */; };
 		CCA4ACBB1EFA0DB8000EAA4A /* ChangeInfoService.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA4ACBA1EFA0DB8000EAA4A /* ChangeInfoService.m */; };
@@ -200,6 +202,10 @@
 		CC2112461F14BA4700A00E51 /* HomeDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeDataService.m; sourceTree = "<group>"; };
 		CC2112481F14D43900A00E51 /* TopicService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicService.h; sourceTree = "<group>"; };
 		CC2112491F14D43900A00E51 /* TopicService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicService.m; sourceTree = "<group>"; };
+		CC9D0D2C1F1C8039007FA532 /* Sign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sign.h; sourceTree = "<group>"; };
+		CC9D0D2D1F1C8039007FA532 /* Sign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sign.m; sourceTree = "<group>"; };
+		CC9D0D2F1F1CBFBA007FA532 /* Topic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Topic.h; sourceTree = "<group>"; };
+		CC9D0D301F1CBFBA007FA532 /* Topic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Topic.m; sourceTree = "<group>"; };
 		CCA4ACB31EF92AEC000EAA4A /* BaseInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseInfo.h; sourceTree = "<group>"; };
 		CCA4ACB41EF92AEC000EAA4A /* BaseInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseInfo.m; sourceTree = "<group>"; };
 		CCA4ACB61EFA01EE000EAA4A /* ChangePWService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePWService.h; sourceTree = "<group>"; };
@@ -629,6 +635,10 @@
 				CCD081EF1EFBB13900080629 /* Province.m */,
 				CC2112391F1467B100A00E51 /* Param.h */,
 				CC21123A1F1467B100A00E51 /* Param.m */,
+				CC9D0D2C1F1C8039007FA532 /* Sign.h */,
+				CC9D0D2D1F1C8039007FA532 /* Sign.m */,
+				CC9D0D2F1F1CBFBA007FA532 /* Topic.h */,
+				CC9D0D301F1CBFBA007FA532 /* Topic.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -847,6 +857,7 @@
 				CC2112471F14BA4700A00E51 /* HomeDataService.m in Sources */,
 				96DCCB5E1EC75B6A001C3F39 /* BaseViewController.m in Sources */,
 				CCA4ACD61EFA6E71000EAA4A /* Collect.m in Sources */,
+				CC9D0D311F1CBFBA007FA532 /* Topic.m in Sources */,
 				CCA4ACC41EFA4790000EAA4A /* Follow.m in Sources */,
 				96DCCB5B1EC75B16001C3F39 /* UIViewController+Utils.m in Sources */,
 				CCA4ACB51EF92AEC000EAA4A /* BaseInfo.m in Sources */,
@@ -863,6 +874,7 @@
 				CCA4ACB81EFA01EE000EAA4A /* ChangePWService.m in Sources */,
 				CC2112411F1468A000A00E51 /* SystemParamService.m in Sources */,
 				96C6BBBF1EC804E3000BC138 /* RegisterService.m in Sources */,
+				CC9D0D2E1F1C8039007FA532 /* Sign.m in Sources */,
 				3936E3431F05131A00E264E9 /* ZhuCeXieYiViewController.m in Sources */,
 				CCD081E11EFB9F0C00080629 /* Question.m in Sources */,
 				CCD081DE1EFB97F400080629 /* QuestionService.m in Sources */,
