@@ -20,16 +20,22 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     KuaiJiTableViewController *kuaiJiVC = [[KuaiJiTableViewController alloc] initWithNibName:@"KuaiJiTableViewController" bundle:nil];
+    kuaiJiVC.tagFlag = 1;
     kuaiJiVC.title = @"会计";
     ShenJiTableViewController *shenJiVC = [[ShenJiTableViewController alloc] initWithNibName:@"ShenJiTableViewController" bundle:nil];
+    shenJiVC.tagFlag = 1;
     shenJiVC.title = @"审计";
     CaiGuanTableViewController *caiGuanVC = [[CaiGuanTableViewController alloc] initWithNibName:@"CaiGuanTableViewController" bundle:nil];
+    caiGuanVC.tagFlag = 1;
     caiGuanVC.title = @"财管";
     ShuiFaTableViewController *shuiFaVC = [[ShuiFaTableViewController alloc] initWithNibName:@"ShuiFaTableViewController" bundle:nil];
+    shuiFaVC.tagFlag = 1;
     shuiFaVC.title = @"税法";
     JingJiFaTableViewController *jingJiFaVC = [[JingJiFaTableViewController alloc] initWithNibName:@"JingJiFaTableViewController" bundle:nil];
+    jingJiFaVC.tagFlag = 1;
     jingJiFaVC.title = @"经济法";
     ZhanLueTableViewController *zhanLueVC = [[ZhanLueTableViewController alloc] initWithNibName:@"ZhanLueTableViewController" bundle:nil];
+    zhanLueVC.tagFlag = 1;
     zhanLueVC.title = @"战略";
     
     NSArray *controllerArray = @[kuaiJiVC, shenJiVC, caiGuanVC, shuiFaVC, jingJiFaVC, zhanLueVC];

@@ -10,4 +10,6 @@
 
 @interface ShuiFaTableViewController : UITableViewController
 
+@property (assign, nonatomic) NSInteger tagFlag;
+
 @end

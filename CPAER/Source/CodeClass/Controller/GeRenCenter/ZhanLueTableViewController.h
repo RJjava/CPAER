@@ -10,4 +10,6 @@
 
 @interface ZhanLueTableViewController : UITableViewController
 
+@property (assign, nonatomic) NSInteger tagFlag;
+
 @end

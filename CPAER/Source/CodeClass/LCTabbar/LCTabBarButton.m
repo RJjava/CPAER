@@ -25,7 +25,6 @@
 
 #pragma mark 返回按钮内部UIImage的边框
 -(CGRect) imageRectForContentRect:(CGRect)contentRect{
-    NSLog(@"%f",PxWidth7P);
 //    return CGRectMake(0, 0, contentRect.size.width, contentRect.size.height*kImageRatio);
     return CGRectMake((contentRect.size.width-25)/2.0, 5, 25, 25);
 }

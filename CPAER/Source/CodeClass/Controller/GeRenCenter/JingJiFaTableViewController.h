@@ -10,4 +10,6 @@
 
 @interface JingJiFaTableViewController : UITableViewController
 
+@property (assign, nonatomic) NSInteger tagFlag;
+
 @end

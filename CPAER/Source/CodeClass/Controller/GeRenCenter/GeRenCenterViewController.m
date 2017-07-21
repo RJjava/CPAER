@@ -10,6 +10,10 @@
 #import "GuanZhuViewController.h"
 #import "LiuYanJiaViewController.h"
 #import "YaoQingHaoYouViewController.h"
+#import "WoDeTiWenViewController.h"
+#import "XiaZaiViewController.h"
+#import "SheZhiViewController.h"
+#import "MaoNingCallViewController.h"
 
 @interface GeRenCenterViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableV;
@@ -41,7 +45,7 @@
     
 }
 - (void)viewWillDisappear:(BOOL)animated {
-    [self.navigationController setNavigationBarHidden:NO animated:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
     [super viewWillDisappear:animated];
 }
 //#pragma mark - 设置状态栏
@@ -160,7 +164,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     if (indexPath.row == 3) {//猫宁call
-        [self showMsg:@"猫宁call"];
+        MaoNingCallViewController *maoNingCallVC = [storyBoard instantiateViewControllerWithIdentifier:@"MaoNingCallVC"];
+        [self.navigationController pushViewController:maoNingCallVC animated:YES];
     }else if (indexPath.row == 4){//我的关注
         GuanZhuViewController *guanZhuVC = [storyBoard instantiateViewControllerWithIdentifier:@"GuanZhuVC"];
         [self.navigationController pushViewController:guanZhuVC animated:YES];
@@ -168,11 +173,13 @@
         YaoQingHaoYouViewController *yaoQingHaoYouVC = [storyBoard instantiateViewControllerWithIdentifier:@"YaoQingHaoYouVC"];
         [self.navigationController pushViewController:yaoQingHaoYouVC animated:YES];
     }else if (indexPath.row == 6){//我的下载
-        [self showMsg:@"我的下载"];
+        XiaZaiViewController *xiaZaiVC = [storyBoard instantiateViewControllerWithIdentifier:@"XiaZaiVC"];
+        [self.navigationController pushViewController:xiaZaiVC animated:YES];
     }else if (indexPath.row == 7){//我的收藏
         [self showMsg:@"我的收藏"];
     }else if (indexPath.row == 8){//我的提问
-        [self showMsg:@"我的提问"];
+        WoDeTiWenViewController *woDeTiWenVC = [storyBoard instantiateViewControllerWithIdentifier:@"WoDeTiWenVC"];
+        [self.navigationController pushViewController:woDeTiWenVC animated:YES];
     }else if (indexPath.row == 10){//我的小组
         [self showMsg:@"我的小组"];
     }else if (indexPath.row == 11){//错题库
@@ -183,7 +190,8 @@
         LiuYanJiaViewController *liuYanJiaVC = [storyBoard instantiateViewControllerWithIdentifier:@"LiuYanJiaVC"];
         [self.navigationController pushViewController:liuYanJiaVC animated:YES];
     }else if (indexPath.row == 15){//设置
-        [self showMsg:@"设置"];
+        SheZhiViewController *sheZhiVC = [storyBoard instantiateViewControllerWithIdentifier:@"SheZhiVC"];
+        [self.navigationController pushViewController:sheZhiVC animated:YES];
     }
 
 }

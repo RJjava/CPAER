@@ -10,4 +10,6 @@
 
 @interface CaiGuanTableViewController : UITableViewController
 
+@property (assign, nonatomic) NSInteger tagFlag;
+
 @end
