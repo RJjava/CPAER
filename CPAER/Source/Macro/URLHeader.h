@@ -138,5 +138,60 @@
  */
 #define URL_ProvinceList @"region/getSystemProvince"
 
+/** 3.24
+ * 获取系统参数列表
+ */
+#define URL_SystemParam @"systemParam/getSystemParam"
+
+/** 3.25
+ * 每日签到
+ */
+#define URL_Signin @"signin/userSignin"
+
+/** 3.26
+ * 签到详情
+ */
+#define URL_SigninDetail @"signin/getSigninDetail"
+
+/** 3.27
+ * 首页数据
+ */
+#define URL_FirstPage @"user/firstPage"
+
+/** 3.28
+ * 话题列表
+ */
+#define URL_TopicList @"group/getTopicList"
+
+/** 3.29
+ * 用户所选科目列表
+ */
+#define URL_UserSubject @"subject/getUserSubject"
+
+/** 3.30
+ * 获取章节列表
+ */
+#define URL_Charpter @"subject/getCharpter"
+
+/** 3.31
+ * 获取知识点列表
+ */
+#define URL_KnowPoint @"subject/getKnowPoint"
+
+/** 3.32
+ * 获取知识点详细信息
+ */
+#define URL_KnowPointDetail @"subject/getKnowPointDetail"
+
+/** 3.33
+ * 获取考卷列表
+ */
+#define URL_ExamPaperList @"exam/getExamPaperList"
+
+/** 3.34
+ * 获取考卷试题
+ */
+#define URL_ExamQuestion @"exam/getExamQuestion"
+
 
 #endif
