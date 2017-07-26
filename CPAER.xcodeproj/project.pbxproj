@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3911ED001F26FCF800299B77 /* ZhiShiMapRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3911ECFF1F26FCF800299B77 /* ZhiShiMapRootViewController.m */; };
 		3936E33D1F05048400E264E9 /* FindPassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3936E33C1F05048400E264E9 /* FindPassWordViewController.m */; };
 		3936E3401F050DA200E264E9 /* WanShanZiLiaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3936E33F1F050DA200E264E9 /* WanShanZiLiaoViewController.m */; };
 		3936E3431F05131A00E264E9 /* ZhuCeXieYiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3936E3421F05131A00E264E9 /* ZhuCeXieYiViewController.m */; };
@@ -60,13 +61,6 @@
 		96E3C0AC1EC83493009777EE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E3C0AB1EC83493009777EE /* LoginViewController.m */; };
 		96E3C0B01EC83DF4009777EE /* LearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E3C0AF1EC83DF4009777EE /* LearnViewController.m */; };
 		B0E3335E3659251A5EEC0B51 /* libPods-CPAER.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF02B227F4CFDFA8F83673D7 /* libPods-CPAER.a */; };
-		CC21123B1F1467B100A00E51 /* Param.m in Sources */ = {isa = PBXBuildFile; fileRef = CC21123A1F1467B100A00E51 /* Param.m */; };
-		CC2112411F1468A000A00E51 /* SystemParamService.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2112401F1468A000A00E51 /* SystemParamService.m */; };
-		CC2112441F14780B00A00E51 /* SignInService.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2112431F14780B00A00E51 /* SignInService.m */; };
-		CC2112471F14BA4700A00E51 /* HomeDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2112461F14BA4700A00E51 /* HomeDataService.m */; };
-		CC21124A1F14D43900A00E51 /* TopicService.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2112491F14D43900A00E51 /* TopicService.m */; };
-		CC9D0D2E1F1C8039007FA532 /* Sign.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9D0D2D1F1C8039007FA532 /* Sign.m */; };
-		CC9D0D311F1CBFBA007FA532 /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9D0D301F1CBFBA007FA532 /* Topic.m */; };
 		CCA4ACB51EF92AEC000EAA4A /* BaseInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA4ACB41EF92AEC000EAA4A /* BaseInfo.m */; };
 		CCA4ACB81EFA01EE000EAA4A /* ChangePWService.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA4ACB71EFA01EE000EAA4A /* ChangePWService.m */; };
 		CCA4ACBB1EFA0DB8000EAA4A /* ChangeInfoService.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA4ACBA1EFA0DB8000EAA4A /* ChangeInfoService.m */; };
@@ -87,8 +81,6 @@
 		CCD081F01EFBB13900080629 /* Province.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD081EF1EFBB13900080629 /* Province.m */; };
 		CCD081F31EFBB1FF00080629 /* TransactionService.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD081F21EFBB1FF00080629 /* TransactionService.m */; };
 		CCD081F61EFBB43100080629 /* ProvinceService.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD081F51EFBB43100080629 /* ProvinceService.m */; };
-		CCED79571F1770EE00E13C88 /* UserSubjectService.m in Sources */ = {isa = PBXBuildFile; fileRef = CCED79561F1770EE00E13C88 /* UserSubjectService.m */; };
-		CCED795A1F1778BF00E13C88 /* ExamService.m in Sources */ = {isa = PBXBuildFile; fileRef = CCED79591F1778BF00E13C88 /* ExamService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +101,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3911ECFE1F26FCF800299B77 /* ZhiShiMapRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhiShiMapRootViewController.h; sourceTree = "<group>"; };
+		3911ECFF1F26FCF800299B77 /* ZhiShiMapRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhiShiMapRootViewController.m; sourceTree = "<group>"; };
 		3936E33B1F05048400E264E9 /* FindPassWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindPassWordViewController.h; sourceTree = "<group>"; };
 		3936E33C1F05048400E264E9 /* FindPassWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindPassWordViewController.m; sourceTree = "<group>"; };
 		3936E33E1F050DA200E264E9 /* WanShanZiLiaoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WanShanZiLiaoViewController.h; sourceTree = "<group>"; };
@@ -213,20 +207,6 @@
 		96E3C0AE1EC83DF4009777EE /* LearnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnViewController.h; sourceTree = "<group>"; };
 		96E3C0AF1EC83DF4009777EE /* LearnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnViewController.m; sourceTree = "<group>"; };
 		BDCC12CC995662164A8A3C92 /* Pods-CPAER.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CPAER.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CPAER/Pods-CPAER.debug.xcconfig"; sourceTree = "<group>"; };
-		CC2112391F1467B100A00E51 /* Param.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Param.h; sourceTree = "<group>"; };
-		CC21123A1F1467B100A00E51 /* Param.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Param.m; sourceTree = "<group>"; };
-		CC21123F1F1468A000A00E51 /* SystemParamService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemParamService.h; sourceTree = "<group>"; };
-		CC2112401F1468A000A00E51 /* SystemParamService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemParamService.m; sourceTree = "<group>"; };
-		CC2112421F14780B00A00E51 /* SignInService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInService.h; sourceTree = "<group>"; };
-		CC2112431F14780B00A00E51 /* SignInService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInService.m; sourceTree = "<group>"; };
-		CC2112451F14BA4700A00E51 /* HomeDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeDataService.h; sourceTree = "<group>"; };
-		CC2112461F14BA4700A00E51 /* HomeDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeDataService.m; sourceTree = "<group>"; };
-		CC2112481F14D43900A00E51 /* TopicService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicService.h; sourceTree = "<group>"; };
-		CC2112491F14D43900A00E51 /* TopicService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicService.m; sourceTree = "<group>"; };
-		CC9D0D2C1F1C8039007FA532 /* Sign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sign.h; sourceTree = "<group>"; };
-		CC9D0D2D1F1C8039007FA532 /* Sign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sign.m; sourceTree = "<group>"; };
-		CC9D0D2F1F1CBFBA007FA532 /* Topic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Topic.h; sourceTree = "<group>"; };
-		CC9D0D301F1CBFBA007FA532 /* Topic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Topic.m; sourceTree = "<group>"; };
 		CCA4ACB31EF92AEC000EAA4A /* BaseInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseInfo.h; sourceTree = "<group>"; };
 		CCA4ACB41EF92AEC000EAA4A /* BaseInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseInfo.m; sourceTree = "<group>"; };
 		CCA4ACB61EFA01EE000EAA4A /* ChangePWService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePWService.h; sourceTree = "<group>"; };
@@ -267,10 +247,6 @@
 		CCD081F21EFBB1FF00080629 /* TransactionService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionService.m; sourceTree = "<group>"; };
 		CCD081F41EFBB43100080629 /* ProvinceService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProvinceService.h; sourceTree = "<group>"; };
 		CCD081F51EFBB43100080629 /* ProvinceService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProvinceService.m; sourceTree = "<group>"; };
-		CCED79551F1770EE00E13C88 /* UserSubjectService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSubjectService.h; sourceTree = "<group>"; };
-		CCED79561F1770EE00E13C88 /* UserSubjectService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSubjectService.m; sourceTree = "<group>"; };
-		CCED79581F1778BF00E13C88 /* ExamService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExamService.h; sourceTree = "<group>"; };
-		CCED79591F1778BF00E13C88 /* ExamService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExamService.m; sourceTree = "<group>"; };
 		E16E2CEA6F6FD73FC65A6D59 /* Pods-CPAER.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CPAER.release.xcconfig"; path = "Pods/Target Support Files/Pods-CPAER/Pods-CPAER.release.xcconfig"; sourceTree = "<group>"; };
 		FF02B227F4CFDFA8F83673D7 /* libPods-CPAER.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CPAER.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -307,6 +283,15 @@
 				FF02B227F4CFDFA8F83673D7 /* libPods-CPAER.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3911ECFD1F26FCC300299B77 /* ZhiShiMap */ = {
+			isa = PBXGroup;
+			children = (
+				3911ECFE1F26FCF800299B77 /* ZhiShiMapRootViewController.h */,
+				3911ECFF1F26FCF800299B77 /* ZhiShiMapRootViewController.m */,
+			);
+			path = ZhiShiMap;
 			sourceTree = "<group>";
 		};
 		39E56A991F022A9200430540 /* GeRenCenter */ = {
@@ -563,6 +548,7 @@
 		966726771EBF01C700DA85F8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3911ECFD1F26FCC300299B77 /* ZhiShiMap */,
 				39E56A991F022A9200430540 /* GeRenCenter */,
 				96E3C0AD1EC83DDC009777EE /* TarBarRoot */,
 				9667267A1EBF021000DA85F8 /* LoginRegister */,
@@ -620,18 +606,6 @@
 				CCD081F21EFBB1FF00080629 /* TransactionService.m */,
 				CCD081F41EFBB43100080629 /* ProvinceService.h */,
 				CCD081F51EFBB43100080629 /* ProvinceService.m */,
-				CC21123F1F1468A000A00E51 /* SystemParamService.h */,
-				CC2112401F1468A000A00E51 /* SystemParamService.m */,
-				CC2112421F14780B00A00E51 /* SignInService.h */,
-				CC2112431F14780B00A00E51 /* SignInService.m */,
-				CC2112451F14BA4700A00E51 /* HomeDataService.h */,
-				CC2112461F14BA4700A00E51 /* HomeDataService.m */,
-				CC2112481F14D43900A00E51 /* TopicService.h */,
-				CC2112491F14D43900A00E51 /* TopicService.m */,
-				CCED79551F1770EE00E13C88 /* UserSubjectService.h */,
-				CCED79561F1770EE00E13C88 /* UserSubjectService.m */,
-				CCED79581F1778BF00E13C88 /* ExamService.h */,
-				CCED79591F1778BF00E13C88 /* ExamService.m */,
 			);
 			path = WebService;
 			sourceTree = "<group>";
@@ -668,12 +642,6 @@
 				CCD081EC1EFBAE3C00080629 /* Transaction.m */,
 				CCD081EE1EFBB13900080629 /* Province.h */,
 				CCD081EF1EFBB13900080629 /* Province.m */,
-				CC2112391F1467B100A00E51 /* Param.h */,
-				CC21123A1F1467B100A00E51 /* Param.m */,
-				CC9D0D2C1F1C8039007FA532 /* Sign.h */,
-				CC9D0D2D1F1C8039007FA532 /* Sign.m */,
-				CC9D0D2F1F1CBFBA007FA532 /* Topic.h */,
-				CC9D0D301F1CBFBA007FA532 /* Topic.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -888,18 +856,13 @@
 				39E56ADA1F0274C200430540 /* JingJiFaTableViewController.m in Sources */,
 				CCD081E71EFBA4B000080629 /* Personal.m in Sources */,
 				3949ED171F0657B00031E6F6 /* GuanZhuViewController.m in Sources */,
-				CC21124A1F14D43900A00E51 /* TopicService.m in Sources */,
-				CC2112471F14BA4700A00E51 /* HomeDataService.m in Sources */,
 				96DCCB5E1EC75B6A001C3F39 /* BaseViewController.m in Sources */,
 				CCA4ACD61EFA6E71000EAA4A /* Collect.m in Sources */,
-				CC9D0D311F1CBFBA007FA532 /* Topic.m in Sources */,
 				CCA4ACC41EFA4790000EAA4A /* Follow.m in Sources */,
 				39C3DCE51F136F6C00FDA6C0 /* SheZhiViewController.m in Sources */,
 				96DCCB5B1EC75B16001C3F39 /* UIViewController+Utils.m in Sources */,
 				39E27B271F209DA600AFBDEE /* CALayer+LyerColor.m in Sources */,
 				CCA4ACB51EF92AEC000EAA4A /* BaseInfo.m in Sources */,
-				CCED795A1F1778BF00E13C88 /* ExamService.m in Sources */,
-				CCED79571F1770EE00E13C88 /* UserSubjectService.m in Sources */,
 				CCA4ACBB1EFA0DB8000EAA4A /* ChangeInfoService.m in Sources */,
 				3936E3491F0515E500E264E9 /* BaoKaoKeMuViewController.m in Sources */,
 				9667267D1EBF04D200DA85F8 /* RegisterViewController.m in Sources */,
@@ -909,13 +872,8 @@
 				CCD081F31EFBB1FF00080629 /* TransactionService.m in Sources */,
 				39E56ADF1F02751200430540 /* ZhanLueTableViewController.m in Sources */,
 				CCA4ACB81EFA01EE000EAA4A /* ChangePWService.m in Sources */,
-<<<<<<< Updated upstream
-				CC2112411F1468A000A00E51 /* SystemParamService.m in Sources */,
-=======
 				395610141F0CD3B3001D645D /* XiaZaiViewController.m in Sources */,
->>>>>>> Stashed changes
 				96C6BBBF1EC804E3000BC138 /* RegisterService.m in Sources */,
-				CC9D0D2E1F1C8039007FA532 /* Sign.m in Sources */,
 				3936E3431F05131A00E264E9 /* ZhuCeXieYiViewController.m in Sources */,
 				CCD081E11EFB9F0C00080629 /* Question.m in Sources */,
 				CCD081DE1EFB97F400080629 /* QuestionService.m in Sources */,
@@ -935,9 +893,8 @@
 				3956101A1F0D2DBD001D645D /* WoDeShuQianViewController.m in Sources */,
 				963BB0431EBB1A5400F74944 /* LCTabBarButton.m in Sources */,
 				39E56AC61F02747F00430540 /* KuaiJiTableViewController.m in Sources */,
-				CC2112441F14780B00A00E51 /* SignInService.m in Sources */,
-				CC21123B1F1467B100A00E51 /* Param.m in Sources */,
 				39E56AB71F026AB400430540 /* CAPSPageMenu.m in Sources */,
+				3911ED001F26FCF800299B77 /* ZhiShiMapRootViewController.m in Sources */,
 				963BAFDD1EBB14C900F74944 /* main.m in Sources */,
 				CCA4ACCA1EFA57C2000EAA4A /* ResourceService.m in Sources */,
 				39E56AD01F02749E00430540 /* CaiGuanTableViewController.m in Sources */,

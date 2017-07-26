@@ -19,6 +19,7 @@
 
 #import "LCTabBarController.h"
 #import "LCTabbar.h"
+#import "ZhiShiMapRootViewController.h"
 
 @interface LCTabBarController ()<UINavigationControllerDelegate,LCTabBarDelegate>
 
@@ -87,7 +88,10 @@
 
 
 -(void)cameraClick:(UIButton *)btn{
-    self.selectedIndex = btn.tag;
+//    self.selectedIndex = btn.tag;//zzh注释
+    UIStoryboard *myStoryBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    ZhiShiMapRootViewController *zhiShiMapVC = [myStoryBoard instantiateViewControllerWithIdentifier:@"ZhiShiMapRootVC"];
+    [self.selectedViewController pushViewController:zhiShiMapVC animated:NO];
 }
 
 -(void)changeNav:(NSInteger)from to:(NSInteger)to{
