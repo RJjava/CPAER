@@ -10,4 +10,6 @@
 
 @interface ZhiShiMapRootViewController : BaseViewController
 
+@property (assign, nonatomic) NSInteger typeFlag;
+
 @end

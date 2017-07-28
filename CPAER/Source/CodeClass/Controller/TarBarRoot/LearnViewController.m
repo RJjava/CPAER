@@ -101,9 +101,10 @@
         IdentCell = @"Cell00";
         cell = [tableView dequeueReusableCellWithIdentifier:IdentCell forIndexPath:indexPath];
         UIView *rootV = [cell.contentView viewWithTag:101];
-        //设置颜色的渐变(从2F8AFF渐变到19e0ff)
+        //颜色从2F8AFF（47，138，255）渐变到19e0ff（25,224,255），用代码设置颜色(采用sRGB标准）是从57，159，255渐变到0，229，255
         CAGradientLayer *gradientLayer = [CAGradientLayer layer];
-        gradientLayer.colors = @[(__bridge id)[UIColor colorWithRed:47/255.0 green:138/255.0 blue:255/255.0 alpha:1.0].CGColor, (__bridge id)[UIColor colorWithRed:25/255.0 green:224/255.0 blue:255/255.0 alpha:1.0].CGColor];
+//        gradientLayer.colors = @[(__bridge id)[UIColor colorWithRed:47/255.0 green:138/255.0 blue:255/255.0 alpha:1.0].CGColor, (__bridge id)[UIColor colorWithRed:25/255.0 green:224/255.0 blue:255/255.0 alpha:1.0].CGColor];
+        gradientLayer.colors = @[(__bridge id)[UIColor colorWithRed:57/255.0 green:159/255.0 blue:255/255.0 alpha:1.0].CGColor, (__bridge id)[UIColor colorWithRed:24/255.0 green:223/255.0 blue:254/255.0 alpha:1.0].CGColor];
         gradientLayer.locations = @[@0.0, @1.0];
         gradientLayer.startPoint = CGPointMake(0, 0);
         gradientLayer.endPoint = CGPointMake(0, 1.0);

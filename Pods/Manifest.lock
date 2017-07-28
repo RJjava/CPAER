@@ -14,9 +14,10 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - JCore (1.1.3)
-  - JPush (3.0.5):
+  - JCore (1.1.5)
+  - JPush (3.0.6):
     - JCore (~> 1.1.1)
+  - LDProgressView (1.2.1)
   - Mantle (2.0.7):
     - Mantle/extobjc (= 2.0.7)
   - Mantle/extobjc (2.0.7)
@@ -32,6 +33,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
   - JPush (~> 3.0.2)
+  - LDProgressView (~> 1.2.1)
   - Mantle (~> 2.0.7)
   - MBProgressHUD (~> 1.0.0)
   - MJRefresh (~> 3.1.12)
@@ -41,8 +43,9 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  JCore: dff3c50e9a7522a508cd9096ca79165968e1aed3
-  JPush: dd0b776998aa705a6242b947bf72e5a640387cfe
+  JCore: 9bd9c770c877c583d98b90a68792b8361974c231
+  JPush: c41be50eb1a574a66aeb68d237f00a4ec6ec3a82
+  LDProgressView: f6afc7c30d2a9edf33001515f3189338567a32d2
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
@@ -50,6 +53,6 @@ SPEC CHECKSUMS:
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 4bb324bbc0538747fc7d9276c3fd64f3a661aaaf
+PODFILE CHECKSUM: a3daa560c399ecdcbeac5d17f9ad08447a93d652
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.1
