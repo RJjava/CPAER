@@ -7,7 +7,7 @@
 //
 
 #import "LearnViewController.h"
-#import "WoDeShuQianViewController.h"
+#import "LoginViewController.h"
 
 @interface LearnViewController ()
 @property (weak, nonatomic) IBOutlet UISearchBar *searchB;
@@ -23,6 +23,8 @@
     // Do any additional setup after loading the view.
     _tableV.tableFooterView = [[UIView alloc] init];
     _tuiJianNeiRongL = [[NSMutableArray alloc] initWithObjects:@"tjTingzzh", @"tjTingzzh", @"tjTingzzh", @"tjTingzzh", nil];
+    _searchB.layer.borderWidth = 0;
+    _searchB.tintColor = [UIColor clearColor];
     
 }
 
@@ -32,15 +34,27 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated{
-//    [self presentLoginVC];
+    [self showTabBar];
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+    [super viewWillAppear:animated];
+    if (![Tools isLogin]) {//没有登录
+        
+        if ([[NSUserDefaults standardUserDefaults] valueForKey:@"hadShowLoginVC"] == nil || [[[NSUserDefaults standardUserDefaults]valueForKey:@"hadShowLoginVC"] isEqualToString:@"NO"]) {//没有显示过登录页面
+            [[NSUserDefaults standardUserDefaults] setObject:@"YES" forKey:@"hadShowLoginVC"];
+            [self p_presentLoginVC];
+        }
+    }else{
+        [[NSUserDefaults standardUserDefaults] setObject:@"YES" forKey:@"hadShowLoginVC"];
+    }
 }
 /**
  跳转登陆页面
  */
-- (IBAction)tiaoZhuanBtnClick:(UIButton *)sender {
+- (IBAction)p_presentLoginVC{
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     
-    WoDeShuQianViewController *loginVC = [storyBoard instantiateViewControllerWithIdentifier:@"WoDeShuQianVC"];
+    LoginViewController *loginVC = [storyBoard instantiateViewControllerWithIdentifier:@"LoginVC"];
+    loginVC.whereFrom = @"1";
     [self.navigationController pushViewController:loginVC animated:YES];
 //    [self presentViewController:loginVC animated:NO completion:nil];
 }

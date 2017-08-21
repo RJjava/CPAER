@@ -10,4 +10,9 @@
 
 @interface LoginViewController : BaseViewController
 
+//记录从什么页面跳转过来的
+//1,从首页
+//2,个人中心主页
+@property (nonatomic, strong) NSString *whereFrom;
+
 @end

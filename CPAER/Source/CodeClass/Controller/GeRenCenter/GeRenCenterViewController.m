@@ -14,9 +14,12 @@
 #import "XiaZaiViewController.h"
 #import "SheZhiViewController.h"
 #import "MaoNingCallViewController.h"
+#import "LoginViewController.h"
+#import "PersonalSerivce.h"
 
 @interface GeRenCenterViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableV;
+@property (strong, nonatomic) NSMutableDictionary *personalSpaceInfo;//个人空间首页信息
 
 @end
 
@@ -24,6 +27,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _personalSpaceInfo = [[NSMutableDictionary alloc] init];
+    self.tabBarController.tabBar.hidden = NO;
     _tableV.tableFooterView = [[UIView alloc] init];
 }
 
@@ -42,7 +47,25 @@
     
     [self.navigationController setNavigationBarHidden:YES animated:animated];
     [super viewWillAppear:animated];
+    [self showTabBar];
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+    [super viewWillAppear:animated];
+    if (![Tools isLogin]) {//没有登录
+        [self p_presentLoginVC];
+    }else{
+        [self P_getInfo];
+    }
+}
+/**
+ 跳转登陆页面
+ */
+- (IBAction)p_presentLoginVC{
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     
+    LoginViewController *loginVC = [storyBoard instantiateViewControllerWithIdentifier:@"LoginVC"];
+    loginVC.whereFrom = @"2";
+    [self.navigationController pushViewController:loginVC animated:YES];
+    //    [self presentViewController:loginVC animated:NO completion:nil];
 }
 - (void)viewWillDisappear:(BOOL)animated {
     [self.navigationController setNavigationBarHidden:YES animated:animated];
@@ -58,7 +81,17 @@
 //-(BOOL)prefersStatusBarHidden{
 //    return NO;
 //}
-
+- (void)P_getInfo{
+    [[PersonalSerivce sharedService] getPersonalSpaceHandler:^(id object, NSError *err) {
+        if(!err){//请求成功
+            //            [self showMsg:object];//这个object不是NSString
+            _personalSpaceInfo = (NSMutableDictionary *)object;
+            [_tableV reloadData];
+        }else{//请求失败
+            [self showMsg:err.localizedDescription];
+        }
+    }];
+}
 #pragma mark - TableView代理
 //组数
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -91,10 +124,23 @@
     if (indexPath.row == 0) {//头像
         IdentCell = @"Cell00";
         cell = [tableView dequeueReusableCellWithIdentifier:IdentCell forIndexPath:indexPath];
+        UIImageView *headImgV = [cell viewWithTag:101];//头像
+        [headImgV sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",[_personalSpaceInfo objectForKey:@"resourceUrl"],[_personalSpaceInfo objectForKey:@"headImgUrl"]]] placeholderImage:[UIImage imageNamed:@"toux"]];
+        UILabel *nickNameLab = [cell viewWithTag:102];//昵称
+        nickNameLab.text = [_personalSpaceInfo objectForKey:@"nickName"];
+        UILabel *userSignatureLab = [cell viewWithTag:103];//用户签名
+        userSignatureLab.text = @"学海无涯，学无止境";
+        
         return cell;
     }else if (indexPath.row == 1){//关注粉丝积分
         IdentCell = @"Cell01";
         cell = [tableView dequeueReusableCellWithIdentifier:IdentCell forIndexPath:indexPath];
+        UILabel *guanZhuLab = [cell viewWithTag:101];//关注
+        guanZhuLab.text = [NSString stringWithFormat:@"关注：%@",[_personalSpaceInfo objectForKey:@"followCount"]];
+        UILabel *fenSiLab = [cell viewWithTag:102];//粉丝
+        fenSiLab.text = [NSString stringWithFormat:@"粉丝：%@",[_personalSpaceInfo objectForKey:@"beFollowCount"]];
+        UILabel *jiFenLab = [cell viewWithTag:103];//积分
+        jiFenLab.text = [NSString stringWithFormat:@"积分：%@",[_personalSpaceInfo objectForKey:@"avaIntegralAmount"]];
         return cell;
     }else if (indexPath.row == 2){//签到栏
         IdentCell = @"Cell02";
@@ -208,9 +254,9 @@
 - (void)qianDaoBtnClick{
     [self showMsg:@"签到"];
 }
-//主页Btn
+//通知
 - (IBAction)rightBtnClick:(UIButton *)sender {
-    //    [self.navigationController popToRootViewControllerAnimated:YES];
+    [self showMsg:@"通知"];
 }
 
 @end

@@ -33,10 +33,10 @@
     [self POST:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSError *err = [self handleSuccessBlockWithResponse:responseObject];
         if (!err) {
-            BaseInfo *model = [MTLJSONAdapter modelOfClass:[BaseInfo class] fromJSONDictionary:responseObject error:nil];
             [[NSUserDefaults standardUserDefaults] setObject:responseObject[@"userId"] forKey:@"userId"];
+            [[NSUserDefaults standardUserDefaults] setObject:responseObject[@"loginToken"] forKey:@"loginToken"];
             [[NSUserDefaults standardUserDefaults] synchronize];
-            handler(model,nil);
+            handler(responseObject,nil);
         } else {
             handler(nil,err);
         }

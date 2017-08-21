@@ -193,5 +193,9 @@
  */
 #define URL_ExamQuestion @"exam/getExamQuestion"
 
+/** 3.39
+ * 3.39	获取用户基本信息
+ */
+#define URL_UserInfoDetail @"user/getBasicInfo"
 
 #endif

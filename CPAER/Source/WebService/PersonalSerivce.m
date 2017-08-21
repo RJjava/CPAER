@@ -25,8 +25,9 @@
     [self POST:url parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSError *err = [self handleSuccessBlockWithResponse:responseObject];
         if (!err) {
-            Personal *model = [MTLJSONAdapter modelOfClass:[Personal class] fromJSONDictionary:responseObject error:nil];
-            handler(model,nil);
+//            Personal *model = [MTLJSONAdapter modelOfClass:[Personal class] fromJSONDictionary:responseObject error:nil];
+//            handler(model,nil);
+            handler(responseObject,nil);
         } else {
             handler(nil,err);
         }

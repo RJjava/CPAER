@@ -25,6 +25,9 @@
     _tableV.tableFooterView = [[UIView alloc] init];
     // Dispose of any resources that can be recreated.
 }
+- (void)viewWillAppear:(BOOL)animated{
+    [self hideTabBar];
+}
 #pragma mark - TableView代理
 //组数
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -143,7 +146,8 @@
     }else if (indexPath.row == 12){//小组提醒
         [self showMsg:@"小组提醒"];
     }else if (indexPath.row == 14){//退出登录
-        [self showMsg:@"退出登录"];
+        [Tools logOut];
+        [self showMsg:@"已退出登录"];
     }
     
 }

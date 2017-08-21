@@ -26,4 +26,7 @@
 - (void)showSpinner;
 - (void)hideSpinner;
 
+- (void)hideTabBar;
+- (void)showTabBar;
+
 @end

@@ -7,7 +7,6 @@
 //
 
 #import "BaseHttpClient.h"
-#import "BaseInfo.h"
 
 @interface LoginService : BaseHttpClient
 

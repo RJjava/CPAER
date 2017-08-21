@@ -18,7 +18,6 @@
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 
 #import "LCTabBarController.h"
-#import "LCTabbar.h"
 #import "ZhiShiMapRootViewController.h"
 
 @interface LCTabBarController ()<UINavigationControllerDelegate,LCTabBarDelegate>
@@ -44,13 +43,14 @@
     
     self.tabBar.hidden = YES;
     LCTabbar *lctabBar = [[LCTabbar alloc]initWithFrame:self.tabBar.bounds];
+    
     lctabBar.delegate = self;
     //    [self.tabBar addSubview:tabBar];
     CGRect frame = lctabBar.frame;
     lctabBar.frame = CGRectMake(0, self.view.frame.size.height-kTabbarHeight, frame.size.width, kTabbarHeight);
     self.mytabbar = lctabBar;
-    lctabBar.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"tab-_白色透明背景渐变"]];
-    [self.view addSubview:lctabBar];
+    self.mytabbar.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"tab-_白色透明背景渐变"]];
+    [self.view addSubview:self.mytabbar];
     
     _cameraView =[[UIView alloc]init];
     _cameraView.center = CGPointMake(SCREEN_WIDTH*0.5, SCREEN_HEIGHT-(kCameraViewHeight*0.5));
@@ -68,6 +68,7 @@
 
     
 }
+
 
 
 //
@@ -96,6 +97,7 @@
 
 -(void)changeNav:(NSInteger)from to:(NSInteger)to{
     self.selectedIndex = to;
+    
 }
 
 

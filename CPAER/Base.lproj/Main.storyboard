@@ -184,6 +184,9 @@
                                             <constraint firstAttribute="width" secondItem="mjh-ku-0e0" secondAttribute="height" multiplier="1:1" id="Rem-gp-U55"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="tyxxZzh"/>
+                                        <connections>
+                                            <action selector="agreeXYBtn:" destination="voj-hX-PmB" eventType="touchUpInside" id="NUy-wG-MFv"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我已阅读并同意" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZI-GY-PYB">
                                         <rect key="frame" x="51" y="481" width="90" height="21"/>
@@ -261,6 +264,7 @@
                         <outlet property="PassWordTF" destination="8Ti-g2-v34" id="W9f-ZB-POQ"/>
                         <outlet property="PhoneNumTF" destination="eoc-5S-JmC" id="4F8-M2-tpw"/>
                         <outlet property="VerificationCodeTF" destination="Da4-a9-Sd0" id="h96-0g-69L"/>
+                        <outlet property="agreeBtn" destination="mjh-ku-0e0" id="cmU-2B-yLY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sia-Oq-N27" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -449,7 +453,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zr5-tQ-3bI">
                                         <rect key="frame" x="378" y="7" width="36" height="30"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tiwen" translatesAutoresizingMaskIntoConstraints="NO" id="391-KQ-wtA">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tongzhi" translatesAutoresizingMaskIntoConstraints="NO" id="391-KQ-wtA">
                                                 <rect key="frame" x="1" y="2.6666666666666679" width="25" height="25.333333333333332"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="391-KQ-wtA" secondAttribute="height" multiplier="1:1" id="GOi-B4-4Kl"/>
@@ -498,13 +502,13 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="toux" translatesAutoresizingMaskIntoConstraints="NO" id="w2B-rJ-iqs">
+                                                <imageView userInteractionEnabled="NO" tag="101" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="toux" translatesAutoresizingMaskIntoConstraints="NO" id="w2B-rJ-iqs">
                                                     <rect key="frame" x="165" y="5" width="85" height="85"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="w2B-rJ-iqs" secondAttribute="height" multiplier="1:1" id="vdN-fj-xVn"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="昵称" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5g-Pp-Rvn">
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="昵称" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5g-Pp-Rvn">
                                                     <rect key="frame" x="0.0" y="96" width="414" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="c5g-Pp-Rvn" secondAttribute="height" multiplier="207:10" id="QSi-1n-Y5G"/>
@@ -513,7 +517,7 @@
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="学海无涯，学无止境" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sa0-Si-v2H">
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="103" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="学海无涯，学无止境" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sa0-Si-v2H">
                                                     <rect key="frame" x="132" y="124" width="150" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="sa0-Si-v2H" secondAttribute="height" multiplier="50:7" id="xxS-f3-hH3"/>
@@ -570,14 +574,14 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="103" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="积分：0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6EG-OE-47h">
-                                                    <rect key="frame" x="277" y="8" width="129" height="24"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="粉丝：0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thc-As-gWx">
+                                                    <rect key="frame" x="139" y="0.0" width="137" height="40"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="粉丝：0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thc-As-gWx">
-                                                    <rect key="frame" x="139" y="0.0" width="137" height="40"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="103" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="积分：0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6EG-OE-47h">
+                                                    <rect key="frame" x="277" y="8" width="129" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -2128,6 +2132,8 @@
                                 <subviews>
                                     <searchBar contentMode="redraw" placeholder="搜索CPA知识点..." translatesAutoresizingMaskIntoConstraints="NO" id="ygs-gj-x7m">
                                         <rect key="frame" x="62" y="0.0" width="290" height="44"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="barTintColor" red="0.18431372549019609" green="0.54117647058823526" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </searchBar>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aAm-nL-E5k">
@@ -2971,7 +2977,7 @@
                             <constraint firstAttribute="trailing" secondItem="XTE-5h-BZ6" secondAttribute="trailing" id="8Br-vR-GHV"/>
                             <constraint firstItem="g4f-aM-UjB" firstAttribute="width" secondItem="9qM-Sg-JYR" secondAttribute="width" multiplier="27:414" id="L2C-R7-ggl"/>
                             <constraint firstItem="XTE-5h-BZ6" firstAttribute="top" secondItem="jFT-VU-YoE" secondAttribute="bottom" id="Lmq-D9-LzK"/>
-                            <constraint firstAttribute="bottom" secondItem="XTE-5h-BZ6" secondAttribute="bottom" constant="49" id="OvI-2Y-QQ3"/>
+                            <constraint firstItem="j8I-LN-2z8" firstAttribute="top" secondItem="XTE-5h-BZ6" secondAttribute="bottom" id="Tg6-fj-NbV"/>
                             <constraint firstItem="2ir-Bu-Ui6" firstAttribute="top" secondItem="9qM-Sg-JYR" secondAttribute="top" id="V71-pe-6HY"/>
                             <constraint firstItem="jFT-VU-YoE" firstAttribute="leading" secondItem="9qM-Sg-JYR" secondAttribute="leading" id="WLS-1N-7Kg"/>
                             <constraint firstAttribute="trailing" secondItem="2ir-Bu-Ui6" secondAttribute="trailing" id="XF4-kk-TI0"/>
@@ -4744,6 +4750,9 @@
                                 <state key="normal" title="获取验证码">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="getPassWordBtnClick:" destination="awv-Aq-bQY" eventType="touchUpInside" id="V1U-QE-jTa"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ewg-aY-Syz">
                                 <rect key="frame" x="39" y="205.66666666666666" width="337" height="47"/>
@@ -4806,6 +4815,9 @@
                                 <state key="normal" title="确定">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="subBtnClick:" destination="awv-Aq-bQY" eventType="touchUpInside" id="pEo-qc-1EE"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提示：如果您的手机号已停用且号码确认无误，请拨打客服热线：400-700-9596" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAP-eE-FNF">
                                 <rect key="frame" x="39.333333333333343" y="366" width="337" height="44"/>
@@ -4850,6 +4862,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qyq-k9-qNI"/>
+                    <connections>
+                        <outlet property="passWordTF" destination="QO4-uR-rXv" id="BdA-je-8e4"/>
+                        <outlet property="phoneNumTF" destination="kva-jj-Egq" id="gVT-e7-jLe"/>
+                        <outlet property="yanZhengMaTF" destination="kyO-EG-Wyf" id="7Is-Nd-AX5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8gX-gc-3F5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -5915,7 +5932,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="loginBtnClick:" destination="jmp-ZB-BIH" eventType="touchUpInside" id="Ff7-iU-jwP"/>
+                                            <action selector="loginBtnClick:" destination="jmp-ZB-BIH" eventType="touchUpInside" id="hX6-op-v31"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="204" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHC-b7-KBy">
@@ -5929,7 +5946,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="touristBtnClick:" destination="jmp-ZB-BIH" eventType="touchUpInside" id="S7D-Co-5YI"/>
+                                            <action selector="registerBtnClick:" destination="jmp-ZB-BIH" eventType="touchUpInside" id="Cep-S6-8BA"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="204" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GeO-bf-rvM">
@@ -5943,7 +5960,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="touristBtnClick:" destination="jmp-ZB-BIH" eventType="touchUpInside" id="Gkz-my-SRf"/>
+                                            <action selector="forgetPassBtnClick:" destination="jmp-ZB-BIH" eventType="touchUpInside" id="Ao7-LZ-nCp"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="205" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEX-bU-9X8">
@@ -5953,21 +5970,21 @@
                                         </constraints>
                                         <state key="normal" backgroundImage="xinl"/>
                                         <connections>
-                                            <action selector="oneLoginBtnClick:" destination="jmp-ZB-BIH" eventType="touchUpInside" id="J60-n5-LJP"/>
+                                            <action selector="twoLoginBtnClick:" destination="jmp-ZB-BIH" eventType="touchUpInside" id="Hzi-Cj-4sI"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="205" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFi-6Q-xmf">
                                         <rect key="frame" x="68" y="529" width="48" height="48"/>
                                         <state key="normal" backgroundImage="weixin"/>
                                         <connections>
-                                            <action selector="twoLoginBtnClick:" destination="jmp-ZB-BIH" eventType="touchUpInside" id="xXt-3I-7wN"/>
+                                            <action selector="oneLoginBtnClick:" destination="jmp-ZB-BIH" eventType="touchUpInside" id="iDx-0h-tlv"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="205" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tdx-RV-Tmv">
                                         <rect key="frame" x="298.66666666666669" y="529" width="48" height="48"/>
                                         <state key="normal" backgroundImage="QQ"/>
                                         <connections>
-                                            <action selector="threeLoginBtnClick:" destination="jmp-ZB-BIH" eventType="touchUpInside" id="dZJ-yh-BU4"/>
+                                            <action selector="threeLoginBtnClick:" destination="jmp-ZB-BIH" eventType="touchUpInside" id="FyO-vl-UrW"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IeV-Ya-9kL">
@@ -5979,6 +5996,9 @@
                                         <state key="normal" title="先随便逛逛？">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="touristBtnClick:" destination="jmp-ZB-BIH" eventType="touchUpInside" id="O37-Fk-6za"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.14117647058823529" green="0.69019607843137254" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

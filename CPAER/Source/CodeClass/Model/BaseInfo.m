@@ -15,6 +15,17 @@
              @"userId":@"userId",
              @"userName":@"userName",
              @"loginToken":@"loginToken",
+             @"resourceUrl":@"resourceUrl",
+             @"realName":@"realName",
+             @"userSignature":@"userSignature",
+             @"headImgUrl":@"headImgUrl",
+             @"birthday":@"birthday",
+             @"subjectId":@"subjectId",
+             @"subjectName":@"subjectName",
+             @"subjectDesc":@"subjectDesc",
+             @"subjectIcon":@"subjectIcon",
+             @"enabled":@"enabled",
+             @"userSubjectList":@"userSubjectList",
              };
 }
 
