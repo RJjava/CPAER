@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3911ED001F26FCF800299B77 /* ZhiShiMapRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3911ECFF1F26FCF800299B77 /* ZhiShiMapRootViewController.m */; };
+		391C22851F4C5BAF001A7FE2 /* SupportTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 391C22841F4C5BAF001A7FE2 /* SupportTopic.m */; };
 		3936E33D1F05048400E264E9 /* FindPassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3936E33C1F05048400E264E9 /* FindPassWordViewController.m */; };
 		3936E3401F050DA200E264E9 /* WanShanZiLiaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3936E33F1F050DA200E264E9 /* WanShanZiLiaoViewController.m */; };
 		3936E3431F05131A00E264E9 /* ZhuCeXieYiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3936E3421F05131A00E264E9 /* ZhuCeXieYiViewController.m */; };
@@ -130,6 +131,8 @@
 /* Begin PBXFileReference section */
 		3911ECFE1F26FCF800299B77 /* ZhiShiMapRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhiShiMapRootViewController.h; sourceTree = "<group>"; };
 		3911ECFF1F26FCF800299B77 /* ZhiShiMapRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhiShiMapRootViewController.m; sourceTree = "<group>"; };
+		391C22831F4C5BAF001A7FE2 /* SupportTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupportTopic.h; sourceTree = "<group>"; };
+		391C22841F4C5BAF001A7FE2 /* SupportTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SupportTopic.m; sourceTree = "<group>"; };
 		3936E33B1F05048400E264E9 /* FindPassWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindPassWordViewController.h; sourceTree = "<group>"; };
 		3936E33C1F05048400E264E9 /* FindPassWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindPassWordViewController.m; sourceTree = "<group>"; };
 		3936E33E1F050DA200E264E9 /* WanShanZiLiaoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WanShanZiLiaoViewController.h; sourceTree = "<group>"; };
@@ -771,6 +774,8 @@
 				CCA4ACBD1EFA1D84000EAA4A /* FollowService.m */,
 				CCA4ACC81EFA57C2000EAA4A /* ResourceService.h */,
 				CCA4ACC91EFA57C2000EAA4A /* ResourceService.m */,
+				391C22831F4C5BAF001A7FE2 /* SupportTopic.h */,
+				391C22841F4C5BAF001A7FE2 /* SupportTopic.m */,
 				CCA4ACD11EFA688B000EAA4A /* CollectService.h */,
 				CCA4ACD21EFA688B000EAA4A /* CollectService.m */,
 				CCD081DC1EFB97F400080629 /* QuestionService.h */,
@@ -1072,6 +1077,7 @@
 				3936E3491F0515E500E264E9 /* BaoKaoKeMuViewController.m in Sources */,
 				9667267D1EBF04D200DA85F8 /* RegisterViewController.m in Sources */,
 				39BEB85D1F08918400B802C6 /* LiuYanJiaViewController.m in Sources */,
+				391C22851F4C5BAF001A7FE2 /* SupportTopic.m in Sources */,
 				39CB22721F39BADC008D68D5 /* IQUIWindow+Hierarchy.m in Sources */,
 				39CB22781F39BADC008D68D5 /* IQToolbar.m in Sources */,
 				CCD081DB1EFB4F4C00080629 /* UserIdHttpClicent.m in Sources */,

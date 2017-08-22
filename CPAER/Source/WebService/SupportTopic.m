@@ -1,14 +1,14 @@
 //
-//  TopicService.m
+//  SupportTopic.m
 //  CPAER
 //
-//  Created by 刘赞 on 2017/7/11.
+//  Created by 朱智红 on 2017/8/22.
 //  Copyright © 2017年 zhuzh. All rights reserved.
 //
 
-#import "TopicService.h"
+#import "SupportTopic.h"
 
-@implementation TopicService
+@implementation SupportTopic
 
 + (instancetype)sharedService {
     static id service = nil;
@@ -19,22 +19,13 @@
     return service;
 }
 
-- (void)getTopicListWithIsHot:(isHot)isHot GroupId:(NSString *)groupId Handler:(completionObjectHandler)handler {
-//    [self cancelAllRequest];//自己注释掉了
-    NSString *url = [NSString stringWithFormat:@"%@%@",URL_API,URL_TopicList];
-    NSDictionary *dict = [[NSDictionary alloc] init];
-    if (isHot) {
-        dict = @{
-//                 @"isHot":@(isHot),
-                 @"isHot":@"1",
-                 @"groupId":groupId
-                 };
-    }else{
-        dict = @{
-                 @"userId":[[NSUserDefaults standardUserDefaults] valueForKey:@"userId"]
-                 };
-    }
-  
+- (void)supportTopicWithIsSupport:(BOOL)isSupport topicId:(NSString *)topicId Handler:(completionObjectHandler)handler{
+    NSString *url = [NSString stringWithFormat:@"%@%@",URL_API,URL_GroupSupportTopic];
+    NSDictionary *dict = @{
+                           @"topicId":topicId,
+                           @"supportType":isSupport?@"1":@"0"
+                           };
+    
     [self POST:url parameters:dict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSError *err = [self handleSuccessBlockWithResponse:responseObject];
         if (!err) {

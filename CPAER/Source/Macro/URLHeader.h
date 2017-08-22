@@ -194,8 +194,13 @@
 #define URL_ExamQuestion @"exam/getExamQuestion"
 
 /** 3.39
- * 3.39	获取用户基本信息
+ * 获取用户基本信息
  */
 #define URL_UserInfoDetail @"user/getBasicInfo"
+
+/** 3.46
+ * 给话题点赞/取消赞
+ */
+#define URL_GroupSupportTopic @"group/supportTopic"
 
 #endif

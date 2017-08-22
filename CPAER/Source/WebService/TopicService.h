@@ -13,10 +13,10 @@ typedef enum : NSUInteger {
     hot,
 } isHot;
 
-@interface TopicService : UserIdHttpClicent
+@interface TopicService : BaseHttpClient
 
 + (instancetype)sharedService;
 
-- (void)getTopicListWithIsHot:(isHot)isHot GroupId:(NSString *)groupId Handler:(completionArrayHandler)handler;
+- (void)getTopicListWithIsHot:(isHot)isHot GroupId:(NSString *)groupId Handler:(completionObjectHandler)handler;
 
 @end

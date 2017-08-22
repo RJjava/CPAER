@@ -26,8 +26,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _phoneNumTF.text = @"17621416776";
-    _passWordTF.text = @"123456";
+//    _phoneNumTF.text = @"17621416776";
+//    _passWordTF.text = @"123456";
+    _phoneNumTF.text = @"15026997809";
+    _passWordTF.text = @"111111";
     
     // Do any additional setup after loading the view.
 }
