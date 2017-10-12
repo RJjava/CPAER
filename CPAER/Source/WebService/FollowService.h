@@ -7,34 +7,21 @@
 //
 
 #import "UserIdHttpClicent.h"
-#import "Follow.h"
 
-typedef NS_ENUM(NSInteger,followType) {
-    followUser = 1,
-};
-
-typedef NS_ENUM(NSInteger,followUserType) {
-    student = 1,
-    coach = 2
-};
-
-typedef enum : NSUInteger {
-    disFollow,
-    follow,
-} isFollow;
 
 @interface FollowService : UserIdHttpClicent
 
 + (instancetype)sharedService;
 
-- (void)isFollowWithFollowType:(followType)type
-                   FollowValue:(NSInteger )followId
-                      isFollow:(isFollow)flag
+- (void)isFollowWithFollowType:(NSString *)type
+                   FollowValue:(NSString *)followId
+                      isFollow:(NSString *)flag
                        Handler:(completionHandler)handler;
 
-- (void)getFollowListWithFollowType:(followType)type
-                     followUserType:(followUserType)userType
-                               skip:(NSInteger)skip
-                            Handler:(completionInfiniteArrayHandler)handler;
+- (void)getFollowListWithFollowType:(NSString *)type
+                     followUserType:(NSString *)userType
+                       searchCondit:(NSString *)searchCondit
+                               skip:(NSString *)skip
+                            Handler:(completionObjectHandler)handler;
 
 @end

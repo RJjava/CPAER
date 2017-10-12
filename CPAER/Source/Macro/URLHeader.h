@@ -198,9 +198,19 @@
  */
 #define URL_UserInfoDetail @"user/getBasicInfo"
 
+/** 3.43
+ * 获取小组列表
+ */
+#define URL_GroupGetGroupList @"group/getGroupList"
+
 /** 3.46
  * 给话题点赞/取消赞
  */
 #define URL_GroupSupportTopic @"group/supportTopic"
+
+/** 3.54
+ * 推荐关注列表
+ */
+#define URL_RecommendFollowList @"follow/recommendFollowList"
 
 #endif

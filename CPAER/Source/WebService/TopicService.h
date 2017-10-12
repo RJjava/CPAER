@@ -6,7 +6,6 @@
 //  Copyright © 2017年 zhuzh. All rights reserved.
 //
 
-#import "UserIdHttpClicent.h"
 
 typedef enum : NSUInteger {
     disHot,

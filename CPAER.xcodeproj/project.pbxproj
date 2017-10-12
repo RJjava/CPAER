@@ -15,6 +15,10 @@
 		3936E3461F0515D400E264E9 /* BaoKaoDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3936E3451F0515D400E264E9 /* BaoKaoDateViewController.m */; };
 		3936E3491F0515E500E264E9 /* BaoKaoKeMuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3936E3481F0515E500E264E9 /* BaoKaoKeMuViewController.m */; };
 		3949ED171F0657B00031E6F6 /* GuanZhuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3949ED161F0657B00031E6F6 /* GuanZhuViewController.m */; };
+		394FB1531F4FC9C900986D73 /* MyWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 394FB1521F4FC9C900986D73 /* MyWebViewController.m */; };
+		394FB1561F4FD6C100986D73 /* TongZhiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 394FB1551F4FD6C100986D73 /* TongZhiViewController.m */; };
+		394FB15A1F4FE1B200986D73 /* FaXianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 394FB1591F4FE1B200986D73 /* FaXianViewController.m */; };
+		394FB15D1F504B1C00986D73 /* GetGroutListService.m in Sources */ = {isa = PBXBuildFile; fileRef = 394FB15C1F504B1C00986D73 /* GetGroutListService.m */; };
 		39517E301F29B6A30017BA91 /* UIColor+ColorChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 39517E2F1F29B6A30017BA91 /* UIColor+ColorChange.m */; };
 		395610111F0CBC3D001D645D /* YaoQingHaoYouViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395610101F0CBC3D001D645D /* YaoQingHaoYouViewController.m */; };
 		395610141F0CD3B3001D645D /* XiaZaiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395610131F0CD3B3001D645D /* XiaZaiViewController.m */; };
@@ -49,6 +53,8 @@
 		39D88E661F287C02007EB319 /* Param.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D88E651F287C02007EB319 /* Param.m */; };
 		39D88E691F287C2A007EB319 /* Sign.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D88E681F287C2A007EB319 /* Sign.m */; };
 		39D88E6C1F287C3C007EB319 /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D88E6B1F287C3C007EB319 /* Topic.m */; };
+		39DB148A1F558EA500FCD7C5 /* GroupDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DB14891F558EA500FCD7C5 /* GroupDetailViewController.m */; };
+		39DDCA5E1F4EAF6800C9DCB5 /* RecommendFollowService.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DDCA5D1F4EAF6800C9DCB5 /* RecommendFollowService.m */; };
 		39E27B271F209DA600AFBDEE /* CALayer+LyerColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E27B261F209DA600AFBDEE /* CALayer+LyerColor.m */; };
 		39E43F551F4548BD00247777 /* GetBasicInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E43F541F4548BD00247777 /* GetBasicInfo.m */; };
 		39E56A9C1F022A9200430540 /* GeRenCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E56A9B1F022A9200430540 /* GeRenCenterViewController.m */; };
@@ -68,6 +74,7 @@
 		39E56ADB1F0274C200430540 /* JingJiFaTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39E56AD91F0274C200430540 /* JingJiFaTableViewController.xib */; };
 		39E56ADF1F02751200430540 /* ZhanLueTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E56ADD1F02751200430540 /* ZhanLueTableViewController.m */; };
 		39E56AE01F02751200430540 /* ZhanLueTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39E56ADE1F02751200430540 /* ZhanLueTableViewController.xib */; };
+		39FFCCA91F604E4E005734AB /* SheQuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39FFCCA81F604E4E005734AB /* SheQuViewController.m */; };
 		9635A3A31EC04EE9005D7405 /* NetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9635A3A21EC04EE9005D7405 /* NetWorkManager.m */; };
 		9635A3A61EC05C97005D7405 /* UIImage+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 9635A3A51EC05C97005D7405 /* UIImage+Category.m */; };
 		963BAFDD1EBB14C900F74944 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 963BAFDC1EBB14C900F74944 /* main.m */; };
@@ -145,6 +152,14 @@
 		3936E3481F0515E500E264E9 /* BaoKaoKeMuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaoKaoKeMuViewController.m; sourceTree = "<group>"; };
 		3949ED151F0657B00031E6F6 /* GuanZhuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuanZhuViewController.h; sourceTree = "<group>"; };
 		3949ED161F0657B00031E6F6 /* GuanZhuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuanZhuViewController.m; sourceTree = "<group>"; };
+		394FB1511F4FC9C900986D73 /* MyWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWebViewController.h; sourceTree = "<group>"; };
+		394FB1521F4FC9C900986D73 /* MyWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWebViewController.m; sourceTree = "<group>"; };
+		394FB1541F4FD6C100986D73 /* TongZhiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TongZhiViewController.h; sourceTree = "<group>"; };
+		394FB1551F4FD6C100986D73 /* TongZhiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TongZhiViewController.m; sourceTree = "<group>"; };
+		394FB1581F4FE1B200986D73 /* FaXianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaXianViewController.h; sourceTree = "<group>"; };
+		394FB1591F4FE1B200986D73 /* FaXianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaXianViewController.m; sourceTree = "<group>"; };
+		394FB15B1F504B1C00986D73 /* GetGroutListService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetGroutListService.h; sourceTree = "<group>"; };
+		394FB15C1F504B1C00986D73 /* GetGroutListService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetGroutListService.m; sourceTree = "<group>"; };
 		39517E2E1F29B6A20017BA91 /* UIColor+ColorChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ColorChange.h"; sourceTree = "<group>"; };
 		39517E2F1F29B6A30017BA91 /* UIColor+ColorChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ColorChange.m"; sourceTree = "<group>"; };
 		3956100F1F0CBC3D001D645D /* YaoQingHaoYouViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YaoQingHaoYouViewController.h; sourceTree = "<group>"; };
@@ -215,6 +230,10 @@
 		39D88E681F287C2A007EB319 /* Sign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sign.m; sourceTree = "<group>"; };
 		39D88E6A1F287C3B007EB319 /* Topic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Topic.h; sourceTree = "<group>"; };
 		39D88E6B1F287C3C007EB319 /* Topic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Topic.m; sourceTree = "<group>"; };
+		39DB14881F558EA500FCD7C5 /* GroupDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupDetailViewController.h; sourceTree = "<group>"; };
+		39DB14891F558EA500FCD7C5 /* GroupDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupDetailViewController.m; sourceTree = "<group>"; };
+		39DDCA5C1F4EAF6800C9DCB5 /* RecommendFollowService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendFollowService.h; sourceTree = "<group>"; };
+		39DDCA5D1F4EAF6800C9DCB5 /* RecommendFollowService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendFollowService.m; sourceTree = "<group>"; };
 		39E27B251F209DA600AFBDEE /* CALayer+LyerColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+LyerColor.h"; sourceTree = "<group>"; };
 		39E27B261F209DA600AFBDEE /* CALayer+LyerColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+LyerColor.m"; sourceTree = "<group>"; };
 		39E43F531F4548BD00247777 /* GetBasicInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetBasicInfo.h; sourceTree = "<group>"; };
@@ -246,6 +265,8 @@
 		39E56ADC1F02751200430540 /* ZhanLueTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhanLueTableViewController.h; sourceTree = "<group>"; };
 		39E56ADD1F02751200430540 /* ZhanLueTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhanLueTableViewController.m; sourceTree = "<group>"; };
 		39E56ADE1F02751200430540 /* ZhanLueTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZhanLueTableViewController.xib; sourceTree = "<group>"; };
+		39FFCCA71F604E4E005734AB /* SheQuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SheQuViewController.h; sourceTree = "<group>"; };
+		39FFCCA81F604E4E005734AB /* SheQuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SheQuViewController.m; sourceTree = "<group>"; };
 		9635A3A11EC04EE9005D7405 /* NetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkManager.h; sourceTree = "<group>"; };
 		9635A3A21EC04EE9005D7405 /* NetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkManager.m; sourceTree = "<group>"; };
 		9635A3A41EC05C97005D7405 /* UIImage+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Category.h"; sourceTree = "<group>"; };
@@ -378,6 +399,17 @@
 				3911ECFF1F26FCF800299B77 /* ZhiShiMapRootViewController.m */,
 			);
 			path = ZhiShiMap;
+			sourceTree = "<group>";
+		};
+		394FB1571F4FE1A000986D73 /* FaXian */ = {
+			isa = PBXGroup;
+			children = (
+				394FB1581F4FE1B200986D73 /* FaXianViewController.h */,
+				394FB1591F4FE1B200986D73 /* FaXianViewController.m */,
+				39DB14881F558EA500FCD7C5 /* GroupDetailViewController.h */,
+				39DB14891F558EA500FCD7C5 /* GroupDetailViewController.m */,
+			);
+			path = FaXian;
 			sourceTree = "<group>";
 		};
 		39CB223F1F39B3D2008D68D5 /* RegularExpression */ = {
@@ -520,6 +552,15 @@
 				39E56AB61F026AB400430540 /* CAPSPageMenu.m */,
 			);
 			path = PageMenu;
+			sourceTree = "<group>";
+		};
+		39FFCCA61F604E36005734AB /* SheQu */ = {
+			isa = PBXGroup;
+			children = (
+				39FFCCA71F604E4E005734AB /* SheQuViewController.h */,
+				39FFCCA81F604E4E005734AB /* SheQuViewController.m */,
+			);
+			path = SheQu;
 			sourceTree = "<group>";
 		};
 		963BAFCF1EBB14C900F74944 = {
@@ -727,6 +768,8 @@
 			isa = PBXGroup;
 			children = (
 				3911ECFD1F26FCC300299B77 /* ZhiShiMap */,
+				394FB1571F4FE1A000986D73 /* FaXian */,
+				39FFCCA61F604E36005734AB /* SheQu */,
 				39E56A991F022A9200430540 /* GeRenCenter */,
 				96E3C0AD1EC83DDC009777EE /* TarBarRoot */,
 				9667267A1EBF021000DA85F8 /* LoginRegister */,
@@ -770,6 +813,8 @@
 				CCA4ACB71EFA01EE000EAA4A /* ChangePWService.m */,
 				CCA4ACB91EFA0DB8000EAA4A /* ChangeInfoService.h */,
 				CCA4ACBA1EFA0DB8000EAA4A /* ChangeInfoService.m */,
+				39DDCA5C1F4EAF6800C9DCB5 /* RecommendFollowService.h */,
+				39DDCA5D1F4EAF6800C9DCB5 /* RecommendFollowService.m */,
 				CCA4ACBC1EFA1D84000EAA4A /* FollowService.h */,
 				CCA4ACBD1EFA1D84000EAA4A /* FollowService.m */,
 				CCA4ACC81EFA57C2000EAA4A /* ResourceService.h */,
@@ -800,6 +845,8 @@
 				39D88E601F287A57007EB319 /* UserSubjectService.m */,
 				39E43F531F4548BD00247777 /* GetBasicInfo.h */,
 				39E43F541F4548BD00247777 /* GetBasicInfo.m */,
+				394FB15B1F504B1C00986D73 /* GetGroutListService.h */,
+				394FB15C1F504B1C00986D73 /* GetGroutListService.m */,
 			);
 			path = WebService;
 			sourceTree = "<group>";
@@ -809,6 +856,10 @@
 			children = (
 				96E3C0AE1EC83DF4009777EE /* LearnViewController.h */,
 				96E3C0AF1EC83DF4009777EE /* LearnViewController.m */,
+				394FB1511F4FC9C900986D73 /* MyWebViewController.h */,
+				394FB1521F4FC9C900986D73 /* MyWebViewController.m */,
+				394FB1541F4FD6C100986D73 /* TongZhiViewController.h */,
+				394FB1551F4FD6C100986D73 /* TongZhiViewController.m */,
 			);
 			path = TarBarRoot;
 			sourceTree = "<group>";
@@ -1069,7 +1120,9 @@
 				39D88E661F287C02007EB319 /* Param.m in Sources */,
 				39C3DCE51F136F6C00FDA6C0 /* SheZhiViewController.m in Sources */,
 				96DCCB5B1EC75B16001C3F39 /* UIViewController+Utils.m in Sources */,
+				394FB1531F4FC9C900986D73 /* MyWebViewController.m in Sources */,
 				39D88E6C1F287C3C007EB319 /* Topic.m in Sources */,
+				39DB148A1F558EA500FCD7C5 /* GroupDetailViewController.m in Sources */,
 				39E27B271F209DA600AFBDEE /* CALayer+LyerColor.m in Sources */,
 				CCA4ACB51EF92AEC000EAA4A /* BaseInfo.m in Sources */,
 				39D88E5A1F2879FC007EB319 /* SignInService.m in Sources */,
@@ -1104,6 +1157,7 @@
 				39E56AD51F0274B300430540 /* ShuiFaTableViewController.m in Sources */,
 				39CB22751F39BADC008D68D5 /* IQTextView.m in Sources */,
 				CCA4ACBE1EFA1D84000EAA4A /* FollowService.m in Sources */,
+				394FB15D1F504B1C00986D73 /* GetGroutListService.m in Sources */,
 				39CB22761F39BADC008D68D5 /* IQBarButtonItem.m in Sources */,
 				39D88E611F287A57007EB319 /* SystemParamService.m in Sources */,
 				963BB0411EBB1A5400F74944 /* AppDelegate.m in Sources */,
@@ -1118,7 +1172,9 @@
 				3956101A1F0D2DBD001D645D /* WoDeShuQianViewController.m in Sources */,
 				963BB0431EBB1A5400F74944 /* LCTabBarButton.m in Sources */,
 				39E56AC61F02747F00430540 /* KuaiJiTableViewController.m in Sources */,
+				39DDCA5E1F4EAF6800C9DCB5 /* RecommendFollowService.m in Sources */,
 				39CB22441F39B3D2008D68D5 /* TYGValid.m in Sources */,
+				394FB15A1F4FE1B200986D73 /* FaXianViewController.m in Sources */,
 				39E56AB71F026AB400430540 /* CAPSPageMenu.m in Sources */,
 				3911ED001F26FCF800299B77 /* ZhiShiMapRootViewController.m in Sources */,
 				963BAFDD1EBB14C900F74944 /* main.m in Sources */,
@@ -1127,7 +1183,9 @@
 				9635A3A61EC05C97005D7405 /* UIImage+Category.m in Sources */,
 				3936E3461F0515D400E264E9 /* BaoKaoDateViewController.m in Sources */,
 				39E56ABD1F026F1B00430540 /* GeRenDetailViewController.m in Sources */,
+				394FB1561F4FD6C100986D73 /* TongZhiViewController.m in Sources */,
 				39E56AA11F02335D00430540 /* BaseNavTaBarViewController.m in Sources */,
+				39FFCCA91F604E4E005734AB /* SheQuViewController.m in Sources */,
 				39D88E691F287C2A007EB319 /* Sign.m in Sources */,
 				39D88E631F287A57007EB319 /* UserSubjectService.m in Sources */,
 				39E56ACB1F02748E00430540 /* ShenJiTableViewController.m in Sources */,

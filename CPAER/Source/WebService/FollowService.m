@@ -20,16 +20,16 @@
     return service;
 }
 
-- (void)isFollowWithFollowType:(followType)type
-                   FollowValue:(NSInteger)followId
-                      isFollow:(isFollow)flag
-                       Handler:(completionHandler)handler {
+- (void)isFollowWithFollowType:(NSString *)type
+                   FollowValue:(NSString *)followId
+                      isFollow:(NSString *)flag
+                       Handler:(completionHandler)handler{
     [self cancelAllRequest];
     NSString *url = [NSString stringWithFormat:@"%@%@",URL_API,URL_Follow];
     NSDictionary *dict = @{
-                           @"followType":@(type),
-                           @"followValue":@(followId),
-                           @"flag":@(flag)
+                           @"followType":type,
+                           @"followValue":followId,
+                           @"flag":flag
                            };
     [self POST:url parameters:dict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         handler([self handleSuccessBlockWithResponse:responseObject]);
@@ -38,29 +38,39 @@
     }];
 }
 
-- (void)getFollowListWithFollowType:(followType)type
-                     followUserType:(followUserType)userType
-                               skip:(NSInteger)skip
-                            Handler:(completionInfiniteArrayHandler)handler {
+- (void)getFollowListWithFollowType:(NSString *)type
+                     followUserType:(NSString *)userType
+                       searchCondit:(NSString *)searchCondit
+                               skip:(NSString *)skip
+                            Handler:(completionObjectHandler)handler{
     [self cancelAllRequest];
     NSString *url = [NSString stringWithFormat:@"%@%@",URL_API,URL_FollowList];
-    NSDictionary *dict = @{
-                           @"followType":@(type),
-                           @"followUserType":@(userType),
-                           @"curPage":@(skip),
-                           @"maxLine":@([self size])
-                           };
+    NSDictionary *dict;
+    if (searchCondit == nil || [searchCondit isEqualToString:@""]) {//搜索Id为空
+        dict = @{
+                 @"followType":type,
+                 @"followUserType":userType,
+                 @"curPage":skip,
+                 @"maxLine":@"1000"
+                 };
+    }else{
+        dict = @{
+                 @"searchCondit":searchCondit,
+                 @"followType":type,
+                 @"followUserType":userType,
+                 @"curPage":skip,
+                 @"maxLine":@"1000"
+                 };
+    }
     [self POST:url parameters:dict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSError *err = [self handleSuccessBlockWithResponse:responseObject];
         if (!err) {
-            NSArray *json = responseObject[@"data"];
-            NSArray *list = [MTLJSONAdapter modelsOfClass:[Follow class] fromJSONArray:json error:nil];
-            handler(list,list.count < [self size],nil);
+            handler(responseObject,nil);
         } else {
-            handler(nil,NO, err);
+            handler(nil,err);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        handler(nil,NO, [self handleFailureBlockWithError:error]);
+        handler(nil,[self handleFailureBlockWithError:error]);
     }];
 }
 

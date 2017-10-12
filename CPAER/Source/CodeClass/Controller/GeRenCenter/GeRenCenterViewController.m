@@ -47,7 +47,7 @@
     
     [self.navigationController setNavigationBarHidden:YES animated:animated];
     [super viewWillAppear:animated];
-    [self showTabBar];
+    [self hideTabBar];
     [self.navigationController setNavigationBarHidden:YES animated:animated];
     [super viewWillAppear:animated];
     if (![Tools isLogin]) {//没有登录
@@ -126,6 +126,8 @@
         cell = [tableView dequeueReusableCellWithIdentifier:IdentCell forIndexPath:indexPath];
         UIImageView *headImgV = [cell viewWithTag:101];//头像
         [headImgV sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",[_personalSpaceInfo objectForKey:@"resourceUrl"],[_personalSpaceInfo objectForKey:@"headImgUrl"]]] placeholderImage:[UIImage imageNamed:@"toux"]];
+        headImgV.layer.cornerRadius = headImgV.bounds.size.width/2.0;
+        headImgV.layer.masksToBounds = YES;
         UILabel *nickNameLab = [cell viewWithTag:102];//昵称
         nickNameLab.text = [_personalSpaceInfo objectForKey:@"nickName"];
         UILabel *userSignatureLab = [cell viewWithTag:103];//用户签名

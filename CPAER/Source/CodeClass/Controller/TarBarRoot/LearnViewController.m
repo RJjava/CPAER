@@ -11,6 +11,8 @@
 #import "HomeDataService.h"
 #import "TopicService.h"
 #import "SupportTopic.h"
+#import "MyWebViewController.h"
+#import "TongZhiViewController.h"
 
 @interface LearnViewController ()
 @property (weak, nonatomic) IBOutlet UISearchBar *searchB;
@@ -349,7 +351,16 @@
  每日一练Btn点击事件
  */
 - (void)P_meiRiYiLianBtnClick{
-    [self showMsg:@"每日一练"];
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    MyWebViewController *myWebVC = [storyBoard instantiateViewControllerWithIdentifier:@"MyWebVC"];
+    myWebVC.isHideLeftV = NO;
+    myWebVC.leftImageNameStr = @"fanhui";
+    myWebVC.isHideRightV = YES;
+    myWebVC.titleStr = @"每日一练";
+    myWebVC.rightImageNameStr = @"tiwen";
+    myWebVC.urlStr = @"http://www.baidu.com";
+    [self.navigationController pushViewController:myWebVC animated:YES];
 }
 /**
  礼物图标点击事件（不知道什么用）
@@ -380,16 +391,21 @@
         NSIndexPath *indexP = [_tableV indexPathForCell:cellTemp];
         NSDictionary *topicDic;
         if (indexP.row == 9) {//给第一个热门话题点赞
-            topicDic = [_hotTopicList objectAtIndex:1];
+            topicDic = [_hotTopicList objectAtIndex:0];
         }else if (indexP.row == 12){//给第二个热门话题点赞
-            topicDic = [_hotTopicList objectAtIndex:2];
+            topicDic = [_hotTopicList objectAtIndex:1];
         }else if (indexP.row == 16){//给我的话题点赞
-            topicDic = [_myTopicList objectAtIndex:1];
+            topicDic = [_myTopicList objectAtIndex:0];
         }
         [[SupportTopic sharedService] supportTopicWithIsSupport:YES topicId:[topicDic objectForKey:@"topicId"] Handler:^(id object, NSError *err) {
             if(!err){//请求成功
                 //            NSLog(@"%@",object);
-                [self showMsg:@"点赞成功"];
+//                [self showMsg:@"点赞成功"];
+                if (indexP.row == 16) {
+                    [self P_getMyTopicList];
+                }else{
+                    [self P_getHotTopicList];
+                }
             }else{//请求失败
                 [self showMsg:err.localizedDescription];
             }
@@ -414,7 +430,9 @@
 
 //主页Btn
 - (IBAction)rightBtnClick:(UIButton *)sender {
-    [self showMsg:@"通知"];
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    TongZhiViewController *tongZhiVC = [storyBoard instantiateViewControllerWithIdentifier:@"TongZhiVC"];
+    [self.navigationController pushViewController:tongZhiVC animated:YES];
 }
 
 /*
